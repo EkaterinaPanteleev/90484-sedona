@@ -1,7 +1,7 @@
 # Проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ecaterina Panteleev](https://htmlacademy.ru/profile/id90484).
-* Наставник: `Unknown`.
+* Наставник: `Ира Ожерельева`.
 
 ### Немного о себе
 
