@@ -25,192 +25,208 @@
 <!---->
 
 <!--main-->
-<main>
-  <div class="rewiew-intro">
-    <div class="rewiew-intro-img"></div>
-    <div class="rewiew-intro-cont">
-      <div class="rewiew-intro-title">Оставьте свой отзыв</div>
-      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </div>
-  </div>
-
-  <form action="" method="">
-    <div class="form-block rewiewer">
-      <div class="form-block-title">Представьтесь, пожалуйста:</div>
-
-      <div class="form-field">
-        <label class="required" for="rewiewer-last-name">Фамилия:</label>
-        <input type="text" name="rewiewer-last-name" id="rewiewer-last-name" value="Иванов">
-      </div>
-
-     <div class="form-field">
-         <label class="required" for="rewiewer-first-name">Имя:</label>
-        <input type="text" name="rewiewer-first-name" id="rewiewer-first-name" value="Петр">
-      </div>
-
-      <div class="form-field">
-        <label for="rewiewer-patronymic">Отчество:</label>
-        <input type="text" name="rewiewer-patronymic" id="rewiewer-patronymic" value="Александрович">
+  <main>
+    <div class="rewiew-intro">
+      <div class="rewiew-intro-img"></div>
+      <div class="rewiew-intro-cont">
+        <div class="rewiew-intro-title">Оставьте свой отзыв</div>
+        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </div>
 
-    <div class="form-block impressions">
-      <div class="form-block-title">Ваше общее впечатление:</div>
+    <form action="" method="">
+      <div class="form-block rewiewer">
+        <div class="form-block-title">Представьтесь, пожалуйста:</div>
 
-      <input type="radio" name="impressions" value="positive" id="positive">
-      <label for="positive">Скорее положительное</label>
+        <div class="form-field">
+          <label class="required" for="rewiewer-last-name">Фамилия:</label>
+          <input type="text" name="rewiewer-last-name" id="rewiewer-last-name" value="Иванов">
+        </div>
 
-      <input type="radio" name="impressions" value="negative" id="negative">
-      <label for="negative">Скорее отрицательное</label>
-    </div>
+       <div class="form-field">
+           <label class="required" for="rewiewer-first-name">Имя:</label>
+          <input type="text" name="rewiewer-first-name" id="rewiewer-first-name" value="Петр">
+        </div>
 
-    <div class="form-block date">
-      <div class="form-block-title">Даты вашей поездки:</div>
-
-      <div class="form-field">
-        <label class="required" for="arrival">Дата приезда:</label>
-        <input type="text" name="arrival" id="arrival" value="14 июня 2015">
-      </div>
-
-      <div class="quantity-section">
-        <label class="required" for="days-quantity">Длительность прибывания:</label>
-        <div class="counter">
-          <span class="minus">-</span>
-          <input type="text" name="days-quantity" id="days-quantity" value="14">дн.
-          <span class="plus">+</span>
+        <div class="form-field">
+          <label for="rewiewer-patronymic">Отчество:</label>
+          <input type="text" name="rewiewer-patronymic" id="rewiewer-patronymic" value="Александрович">
         </div>
       </div>
 
-      <div class="form-field">
-        <label class="required" for="departure">Дата отъезда:</label>
-        <input type="text" name="departure" id="departure" value="28 июня 2015">
+      <div class="form-block impressions">
+        <div class="form-block-title">Ваше общее впечатление:</div>
+
+        <input type="radio" name="impressions" value="positive" id="positive">
+        <label for="positive">Скорее положительное</label>
+
+        <input type="radio" name="impressions" value="negative" id="negative">
+        <label for="negative">Скорее отрицательное</label>
       </div>
-    </div>
 
-    <div class="form-block travellers">
-      <div class="form-block-title">Количество путешественников:</div>
+      <div class="form-block date">
+        <div class="form-block-title">Даты вашей поездки:</div>
 
-      <div class="quantity-section">
-        <label class="required" for="travellers-quantity">Количество путешественников:</label>
-        <div class="counter">
-          <span class="minus">-</span>
-          <input type="text" name="travellers-quantity" id="travellers-quantity" value="2">чел.
-          <span class="plus">+</span>
+        <div class="form-field">
+          <label class="required" for="arrival">Дата приезда:</label>
+          <input type="text" name="arrival" id="arrival" value="14 июня 2015">
         </div>
-      </div>
 
-      <div class="traveller">
-        <div class="row">
-          <div class="serial-number">
-            <span>№</span>
-            <div class="serial-number-box">1</div>
+        <div class="quantity-section">
+          <label class="required" for="days-quantity">Длительность прибывания:</label>
+          <div class="counter">
+            <span class="minus">-</span>
+            <input type="text" name="days-quantity" id="days-quantity" value="14">дн.
+            <span class="plus">+</span>
           </div>
         </div>
-        <div class="form-field">
-          <label class="required" for="traveller1-last-name">Фамилия:</label>
-          <input type="text" name="traveller1-last-name" id="traveller1-last-name" value="Иванов">
-        </div>
 
         <div class="form-field">
-          <label class="required" for="traveller1-first-name">Имя:</label>
-          <input type="text" name="traveller1-first-name" id="traveller1-first-name" value="Петр">
-        </div>
-
-        <div class="form-field">
-          <label for="traveller1-patronymic">Отчество:</label>
-          <input type="text" name="traveller1-patronymic" id="traveller1-patronymic" value="Александрович">
+          <label class="required" for="departure">Дата отъезда:</label>
+          <input type="text" name="departure" id="departure" value="28 июня 2015">
         </div>
       </div>
 
-      <div class="traveller">
-        <div class="row">
-          <div class="serial-number">
-            <span>№</span>
-            <div class="serial-number-box">2</div>
+      <div class="form-block travellers">
+        <div class="form-block-title">Количество путешественников:</div>
+
+        <div class="quantity-section">
+          <label class="required" for="travellers-quantity">Количество путешественников:</label>
+          <div class="counter">
+            <span class="minus">-</span>
+            <input type="text" name="travellers-quantity" id="travellers-quantity" value="2">чел.
+            <span class="plus">+</span>
           </div>
         </div>
-        <div class="form-field">
-          <label class="required" for="traveller2-last-name">Фамилия:</label>
-          <input type="text" name="traveller2-last-name" id="traveller2-last-name" value="Иванов">
+
+        <div class="traveller">
+          <div class="row">
+            <div class="serial-number">
+              <span>№</span>
+              <div class="serial-number-box">1</div>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="required" for="traveller1-last-name">Фамилия:</label>
+            <input type="text" name="traveller1-last-name" id="traveller1-last-name" value="Иванов">
+          </div>
+
+          <div class="form-field">
+            <label class="required" for="traveller1-first-name">Имя:</label>
+            <input type="text" name="traveller1-first-name" id="traveller1-first-name" value="Петр">
+          </div>
+
+          <div class="form-field">
+            <label for="traveller1-patronymic">Отчество:</label>
+            <input type="text" name="traveller1-patronymic" id="traveller1-patronymic" value="Александрович">
+          </div>
         </div>
 
-        <div class="form-field">
-          <label class="required" for="traveller2-first-name">Имя:</label>
-          <input type="text" name="traveller2-first-name" id="traveller2-first-name" value="Петр">
+        <div class="traveller">
+          <div class="row">
+            <div class="serial-number">
+              <span>№</span>
+              <div class="serial-number-box">2</div>
+            </div>
+          </div>
+          <div class="form-field">
+            <label class="required" for="traveller2-last-name">Фамилия:</label>
+            <input type="text" name="traveller2-last-name" id="traveller2-last-name" value="Иванов">
+          </div>
+
+          <div class="form-field">
+            <label class="required" for="traveller2-first-name">Имя:</label>
+            <input type="text" name="traveller2-first-name" id="traveller2-first-name" value="Петр">
+          </div>
+
+          <div class="form-field">
+            <label for="traveller2-patronymic">Отчество:</label>
+            <input type="text" name="traveller2-patronymic" id="traveller2-patronymic" value="Александрович">
+          </div>
         </div>
 
-        <div class="form-field">
-          <label for="traveller2-patronymic">Отчество:</label>
-          <input type="text" name="traveller2-patronymic" id="traveller2-patronymic" value="Александрович">
-        </div>
       </div>
 
-    </div>
+      <div class="form-block sightseeings">
+        <div class="form-block-title">Посещенные достопримечательности:</div>
 
-    <div class="form-block sightseeings">
-      <div class="form-block-title">Посещенные достопримечательности:</div>
+        <input type="checkbox" name="sightseeing" id="devil">
+        <label for="devil">Мост Дьявола</label>
 
-      <input type="checkbox" name="sightseeing" id="devil">
-      <label for="devil">Мост Дьявола</label>
+        <input type="checkbox" name="sightseeing" id="slide-park">
+        <label for="slide-park">Слайд-парк</label>
 
-      <input type="checkbox" name="sightseeing" id="slide-park">
-      <label for="slide-park">Слайд-парк</label>
+        <input type="checkbox" name="sightseeing" id="bellrock">
+        <label for="bellrock">Гора-Колокол</label>
 
-      <input type="checkbox" name="sightseeing" id="bellrock">
-      <label for="bellrock">Гора-Колокол</label>
+        <input type="checkbox" name="sightseeing" id="redrock">
+        <label for="redrock">Красные скалы</label>
+      </div>
 
-      <input type="checkbox" name="sightseeing" id="redrock">
-      <label for="redrock">Красные скалы</label>
-    </div>
-
-    <div class="form-block photos">
-      <div class="form-block-title">Загрузите фотографии:</div>
-      <a href="" class="btn">ВЫБРАТЬ ФОТОГРАФИИ</a>
-      <div class="photos-list">
-        <div class="photo">
-          <div class="close-photo"></div>
-          <img src="" alt="photo">
-        </div>
-        <div class="photo">
-          <div class="close-photo"></div>
-          <img src="" alt="photo">
-        </div>
-        <div class="photo">
-          <div class="close-photo"></div>
-          <img src="" alt="photo">
-        </div>
-        <div class="photo">
-          <div class="close-photo"></div>
-          <img src="" alt="photo">
-        </div>
-        <div class="photo">
-          <div class="close-photo"></div>
-          <img src="" alt="photo">
-        </div>
-        <div class="photo">
-          <div class="close-photo"></div>
-          <img src="" alt="photo">
-        </div>
-        <div class="photo">
-          <div class="close-photo"></div>
-          <img src="" alt="photo">
+      <div class="form-block photos">
+        <div class="form-block-title">Загрузите фотографии:</div>
+        <a href="" class="btn">ВЫБРАТЬ ФОТОГРАФИИ</a>
+        <div class="photos-list">
+          <div class="photo">
+            <div class="close-photo"></div>
+            <img src="" alt="photo">
+          </div>
+          <div class="photo">
+            <div class="close-photo"></div>
+            <img src="" alt="photo">
+          </div>
+          <div class="photo">
+            <div class="close-photo"></div>
+            <img src="" alt="photo">
+          </div>
+          <div class="photo">
+            <div class="close-photo"></div>
+            <img src="" alt="photo">
+          </div>
+          <div class="photo">
+            <div class="close-photo"></div>
+            <img src="" alt="photo">
+          </div>
+          <div class="photo">
+            <div class="close-photo"></div>
+            <img src="" alt="photo">
+          </div>
+          <div class="photo">
+            <div class="close-photo"></div>
+            <img src="" alt="photo">
+          </div>
         </div>
       </div>
-    </div>
-    <input type="submit" value="Отправить отзыв">
-  </form>
-</main>
-<!---->
+      <input type="submit" value="Отправить отзыв">
+    </form>
+  </main>
+  <!---->
 
-<!--footer-->
-<footer class="page-footer">
-  <a href="" class="hashtag">#visitSEDONA</a>
-  <div class="social">
-    <a href="" class="social-btn">Twitter</a>
-    <a href="" class="social-btn">Facebook</a>
-    <a href="" class="social-btn">Youtube</a>
+  <!--footer-->
+  <footer class="page-footer">
+    <a href="" class="hashtag">#visitSEDONA</a>
+    <div class="social">
+      <a href="" class="social-btn">Twitter</a>
+      <a href="" class="social-btn">Facebook</a>
+      <a href="" class="social-btn">Youtube</a>
+    </div>
+  </footer>
+  <!---->
+
+  <!--failure popup-->
+  <div class="form-popup failure">
+    <div class="form-popup-title">ЧТО-ТО ПОШЛО НЕ ТАК!</div>
+    <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+    <a href="" class="btn">OK</a>
   </div>
-</footer>
-<!---->
+  <!---->
+
+  <!--success popup-->
+  <div class="form-popup success">
+    <div class="form-popup-title">Ваш отзыв отправлен!</div>
+    <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+    <a href="" class="btn">Закрыть окно</a>
+  </div>
+  <!---->
 </body>
 </html>
