@@ -5,52 +5,54 @@
   <title>Sedona-form</title>
 </head>
 <body>
-<!--Main navigaion-->
-  <nav class="main-nav">
-    <ul>
-      <li><a href="">Информация</a></li>
-      <li><a href="">Оставить отзыв</a></li>
-      <li><a href="">Блог шерифа</a></li>
-      <li><a href="">Гостиницы</a></li>
-    </ul>
-    <div class="close-nav"></div>
-  </nav>
-<!---->
-
-<!--header-->
+  <!--header-->
   <header class="page-header">
-    <div class="logo"><img src="" alt=""></div>
-    <div class="open-nav"></div>
+
+    <!--Main navigaion-->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="">Информация</a></li>
+        <li><a href="">Оставить отзыв</a></li>
+        <li><a href="">Блог шерифа</a></li>
+        <li><a href="">Гостиницы</a></li>
+      </ul>
+      <a href="" class="close-nav"></a>
+    </nav>
+    <!---->
+    <div class="page-header-panel">
+      <a href="" class="logo"><img src="" alt=""></a>
+      <div class="open-nav"></div>
+    </div>
   </header>
-<!---->
+  <!---->
 
 <!--main-->
   <main>
-    <div class="rewiew-intro">
-      <div class="rewiew-intro-img"></div>
-      <div class="rewiew-intro-cont">
-        <div class="rewiew-intro-title">Оставьте свой отзыв</div>
+    <div class="review-intro">
+      <div class="review-intro-img"></div>
+      <div class="review-intro-cont">
+        <h1 class="review-intro-title">Оставьте свой отзыв</h1>
         <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </div>
 
     <form action="" method="">
-      <div class="form-block rewiewer">
+      <div class="form-block reviewer">
         <div class="form-block-title">Представьтесь, пожалуйста:</div>
 
         <div class="form-field">
-          <label class="required" for="rewiewer-last-name">Фамилия:</label>
-          <input type="text" name="rewiewer-last-name" id="rewiewer-last-name" value="Иванов">
-        </div>
-
-       <div class="form-field">
-           <label class="required" for="rewiewer-first-name">Имя:</label>
-          <input type="text" name="rewiewer-first-name" id="rewiewer-first-name" value="Петр">
+          <label class="required" for="reviewer-last-name">Фамилия:</label>
+          <input type="text" name="reviewer-last-name" id="reviewer-last-name" value="Иванов">
         </div>
 
         <div class="form-field">
-          <label for="rewiewer-patronymic">Отчество:</label>
-          <input type="text" name="rewiewer-patronymic" id="rewiewer-patronymic" value="Александрович">
+          <label class="required" for="reviewer-first-name">Имя:</label>
+          <input type="text" name="reviewer-first-name" id="reviewer-first-name" value="Петр">
+        </div>
+
+        <div class="form-field">
+          <label for="reviewer-patronymic">Отчество:</label>
+          <input type="text" name="reviewer-patronymic" id="reviewer-patronymic" value="Александрович">
         </div>
       </div>
 
@@ -75,9 +77,9 @@
         <div class="quantity-section">
           <label class="required" for="days-quantity">Длительность прибывания:</label>
           <div class="counter">
-            <span class="minus">-</span>
+            <button type="button" class="minus">-</button>
             <input type="text" name="days-quantity" id="days-quantity" value="14">дн.
-            <span class="plus">+</span>
+            <button type="button" class="plus">+</button>
           </div>
         </div>
 
@@ -93,9 +95,9 @@
         <div class="quantity-section">
           <label class="required" for="travellers-quantity">Количество путешественников:</label>
           <div class="counter">
-            <span class="minus">-</span>
+            <button type="button" class="minus">-</button>
             <input type="text" name="travellers-quantity" id="travellers-quantity" value="2">чел.
-            <span class="plus">+</span>
+            <button type="button" class="plus">+</button>
           </div>
         </div>
 
@@ -165,34 +167,34 @@
 
       <div class="form-block photos">
         <div class="form-block-title">Загрузите фотографии:</div>
-        <a href="" class="btn">ВЫБРАТЬ ФОТОГРАФИИ</a>
+        <input type="file" class="btn" value="ВЫБРАТЬ ФОТОГРАФИИ">
         <div class="photos-list">
           <div class="photo">
-            <div class="close-photo"></div>
+            <a href="" class="close-photo"></a>
             <img src="" alt="photo">
           </div>
           <div class="photo">
-            <div class="close-photo"></div>
+            <a href="" class="close-photo"></a>
             <img src="" alt="photo">
           </div>
           <div class="photo">
-            <div class="close-photo"></div>
+            <a href="" class="close-photo"></a>
             <img src="" alt="photo">
           </div>
           <div class="photo">
-            <div class="close-photo"></div>
+            <a href="" class="close-photo"></a>
             <img src="" alt="photo">
           </div>
           <div class="photo">
-            <div class="close-photo"></div>
+            <a href="" class="close-photo"></a>
             <img src="" alt="photo">
           </div>
           <div class="photo">
-            <div class="close-photo"></div>
+            <a href="" class="close-photo"></a>
             <img src="" alt="photo">
           </div>
           <div class="photo">
-            <div class="close-photo"></div>
+            <a href="" class="close-photo"></a>
             <img src="" alt="photo">
           </div>
         </div>
@@ -204,7 +206,7 @@
 
   <!--footer-->
   <footer class="page-footer">
-    <a href="" class="hashtag">#visitSEDONA</a>
+    <div class="hashtag"><a href="">#visitSEDONA</a></div>
     <div class="social">
       <a href="" class="social-btn">Twitter</a>
       <a href="" class="social-btn">Facebook</a>
