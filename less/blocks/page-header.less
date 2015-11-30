@@ -1,0 +1,48 @@
+.page-header {
+  clearfix:after;
+
+  &__panel {
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+
+
+  &__open-nav {
+    display: block;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    width: 23px;
+    height: 4px;
+    background-color: @blue;
+    cursor: pointer;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 23px;
+        height: 4px;
+        background-color: @blue;
+      }
+      &:before {
+        top: -9px;
+      }
+      &:after {
+        top: 9px;
+      }
+  }
+
+
+
+}
