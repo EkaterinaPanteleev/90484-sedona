@@ -1,10 +1,10 @@
 .page-header {
-  clearfix:after;
+  .clearfix;
 
   &__panel {
     position: relative;
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 16px;
+    padding-bottom: 36px;
   }
 
   &__logo {
@@ -14,35 +14,37 @@
     top: 0;
   }
 
-
-
   &__open-nav {
-    display: block;
-    position: relative;
     float: right;
     margin-right: 20px;
     width: 23px;
-    height: 4px;
-    background-color: @blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
     cursor: pointer;
 
-      &:before,
-      &:after {
-        content: "";
-        position: absolute;
+      span {
         display: block;
+        position: relative;
         width: 23px;
         height: 4px;
         background-color: @blue;
-      }
-      &:before {
-        top: -9px;
-      }
-      &:after {
-        top: 9px;
+
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 23px;
+          height: 4px;
+          background-color: @blue;
+        }
+        &:before {
+          top: -9px;
+        }
+        &:after {
+          top: 9px;
+        }
       }
   }
-
-
 
 }

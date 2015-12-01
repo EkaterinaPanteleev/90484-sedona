@@ -8,26 +8,20 @@
   }
 
   &__item {
-    text-align: center;
-    padding-top: 7px;
-    padding-bottom: 7px;
     background-color: @blue;
     border-bottom: 1px solid @blue-dark;
     border-top: 1px solid @blue-light;
 
-    &:first-child {
-      border-top: none;
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
-
     a {
+      display: block;
+      width: 320px;
       color: #fff;
       font-size: @font-size-nav;
       line-height: 40px;
       font-weight: bold;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      text-align: center;
     }
 
   }
