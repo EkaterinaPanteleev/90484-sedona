@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona-form</title>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet'>
+  <link href="css/style.css" rel="stylesheet">
+  <base href="https://up-htmlacademy.github.io/90484-sedona/5/">
+</head>
+<body>
+  <!--header-->
+  <div class="wrapper">
+    <header class="page-header">
+
+      <!--Main navigaion-->
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Информация</a></li>
+          <li class="main-nav__item"><a href="form.html">Оставить отзыв</a></li>
+          <li class="main-nav__item"><a href="blog.html">Блог шерифа</a></li>
+          <li class="main-nav__item"><a href="">Гостиницы</a></li>
+        </ul>
+        <a href="" class="main-nav__close"></a>
+      </nav>
+      <!---->
+      <div class="page-header__panel">
+        <a href="index.html" class="page-header__logo"><img src="" alt="LOGO"></a>
+        <a class="page-header__open-nav"><span></span></a>
+      </div>
+    </header>
+    <!---->
+
+    <!--main-->
+    <main>
+      <div class="review-intro">
+        <div class="review-intro__img"><img src="" alt="SEDONA"></div>
+        <section class="review-header">
+          <div class="review-header__wrap">
+            <h1 class="review-header__title">Оставьте свой отзыв</h1>
+            <p class="review-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </section>
+      </div>
+
+      <div class="review-form">
+        <form action="" method="">
+
+        <!--Reviewer info-->
+          <fieldset class="reviewer">
+            <legend class="reviewer__title">Представьтесь, пожалуйста:</legend>
+
+            <div class="reviewer__wrap">
+              <label class="reviewer__label  reviewer__label--required" for="reviewer-last-name">Фамилия:</label>
+              <input type="text" name="reviewer-last-name" id="reviewer-last-name" value="Иванов" class="reviewer__field" required>
+            </div>
+
+            <div class="reviewer__wrap">
+              <label class="reviewer__label  reviewer__label--required" for="reviewer-first-name">Имя:</label>
+              <input type="text" name="reviewer-first-name" id="reviewer-first-name" value="Петр" class="reviewer__field" required>
+            </div>
+
+            <div class="reviewer__wrap">
+              <label class="reviewer__label" for="reviewer-patronymic">Отчество:</label>
+              <input type="text" name="reviewer-patronymic" id="reviewer-patronymic" value="Александрович" class="reviewer__field">
+            </div>
+          </fieldset>
+        <!---->
+
+        <!--Positive/negative-->
+          <fieldset class="impressions">
+            <legend class="impressions__title">Ваше общее впечатление:</legend>
+
+            <div class="impressions__wrap">
+              <input type="radio" name="impressions" value="positive" id="positive" class="impressions__btn">
+              <label class="impressions__label" for="positive">Скорее положительное</label>
+            </div>
+
+            <div class="impressions__wrap">
+              <input type="radio" name="impressions" value="negative" id="negative" class="impressions__btn">
+            <label class="impressions__label" for="negative">Скорее отрицательное</label>
+            </div>
+          </fieldset>
+        <!---->
+
+        <!--Trip period-->
+          <fieldset class="period">
+            <legend class="period__title">Даты вашей поездки:</legend>
+
+            <div class="period__wrap">
+              <label class="period__label  period__label--required" for="arrival">Дата приезда:</label>
+              <input type="text" name="arrival" id="arrival" value="14 июня 2015" class="period__field" required>
+            </div>
+
+            <div class="period__counter">
+              <label class="period__label  period__label--required" for="days-quantity">Длительность прибывания:</label>
+              <div class="period__row">
+                <button type="button" class="period__minus-btn">-</button>
+                <div class="period__counter-wrap">
+                  <input type="text" name="days-quantity" id="days-quantity" value="14" class="period__field period__field--days" required><span>дн.</span>
+                </div>
+                <button type="button" class="period__plus-btn">+</button>
+              </div>
+            </div>
+
+            <div class="period__wrap">
+              <label class="period__label  period__label--required" for="departure">Дата отъезда:</label>
+              <input type="text" name="departure" id="departure" value="28 июня 2015" class="period__field" required>
+            </div>
+          </fieldset>
+        <!---->
+
+        <!--About travellers-->
+          <fieldset class="travellers">
+            <legend class="travellers__title">Кол-во путешественников:</legend>
+
+          <!--Travellers quantity-->
+            <div class="travellers__counter">
+              <label class="travellers__label  travellers__counter-label--required" for="travellers-quantity">Количество путешественников:</label>
+              <div class="travellers__row">
+                <button type="button" class="travellers__minus-btn">-</button>
+                <div class="travellers__counter-wrap">
+                  <input type="text" name="travellers-quantity" id="travellers-quantity" value="2" class="travellers__field  travellers__field--count" required><span>чел.</span>
+                </div>
+                <button type="button" class="travellers__plus-btn">+</button>
+              </div>
+            </div>
+          <!---->
+
+          <!--Travellers info-->
+            <div class="travellers__item">
+              <div class="travellers__row">
+                <div class="travellers__number-wrap">
+                  <span class="travellers__number">№</span>
+                  <span class="travellers__number-box">1</span>
+                </div>
+
+                <div class="travellers__wrap">
+                  <label class="travellers__label  travellers__label--required" for="traveller1-last-name">Фамилия:</label>
+                  <input type="text" name="traveller1-last-name" id="traveller1-last-name" value="Иванов" class="travellers__field" required>
+                </div>
+              </div>
+
+              <div class="travellers__wrap">
+                <label class="travellers__label  travellers__label--required" for="traveller1-first-name">Имя:</label>
+                <input type="text" name="traveller1-first-name" id="traveller1-first-name" value="Петр" class="travellers__field" required>
+              </div>
+
+              <div class="travellers__wrap">
+                <label class="travellers__label" for="traveller1-patronymic">Отчество:</label>
+                <input type="text" name="traveller1-patronymic" id="traveller1-patronymic" value="Александрович" class="travellers__field">
+              </div>
+            </div>
+
+            <div class="travellers__item">
+              <div class="travellers__row">
+                <div class="travellers__number-wrap">
+                  <span class="travellers__number">№</span>
+                  <span class="travellers__number-box">2</span>
+                </div>
+
+               <div class="travellers__wrap">
+                  <label class="travellers__label  travellers__label--required" for="traveller1-last-name">Фамилия:</label>
+                  <input type="text" name="traveller1-last-name" id="traveller1-last-name" value="Иванов" class="travellers__field" required>
+                </div>
+              </div>
+
+              <div class="travellers__wrap">
+                <label class="travellers__label  travellers__label--required" for="traveller1-first-name">Имя:</label>
+                <input type="text" name="traveller1-first-name" id="traveller1-first-name" value="Петр" class="travellers__field" required>
+              </div>
+
+              <div class="travellers__wrap">
+                <label class="travellers__label" for="traveller1-patronymic">Отчество:</label>
+                <input type="text" name="traveller1-patronymic" id="traveller1-patronymic" value="Александрович" class="travellers__field">
+              </div>
+            </div>
+          <!---->
+          </fieldset>
+        <!---->
+
+        <!--Sightseeing checkboxes-->
+          <fieldset class="sightseeings">
+            <legend class="sightseeings__title">Посещенные достопримечательности:</legend>
+
+            <ul class="checkbox-list">
+              <li class="checkbox-list__wrap">
+                <input type="checkbox" name="bridge" id="devil" value="bridge" class="checkbox-list__item">
+                <label class="checkbox-list__label" for="devil">Мост Дьявола</label>
+              </li>
+
+              <li class="checkbox-list__wrap">
+                <input type="checkbox" name="park" id="slide-park" value="park" class="checkbox-list__item">
+                <label for="slide-park" class="checkbox-list__label">Слайд-парк</label>
+              </li>
+
+            <li class="checkbox-list__wrap">
+                <input type="checkbox" name="bellrock" id="bellrock" value="bellrock" class="checkbox-list__item">
+              <label for="bellrock" class="checkbox-list__label">Гора-Колокол</label>
+            </li>
+
+              <li class="checkbox-list__wrap">
+                <input type="checkbox" name="redrock" id="redrock" value="redrock" class="checkbox-list__item">
+                <label for="redrock" class="checkbox-list__label">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+        <!---->
+
+        <!--Photo attach-->
+          <fieldset class="photos">
+            <legend class="photos__title">Загрузите фотографии:</legend>
+            <input type="file" class="photos__attach-btn" value="ВЫБРАТЬ ФОТОГРАФИИ">
+            <div class="photo-list">
+              <div class="photo-list__wrap">
+                <a href="" class="photo-list__close"></a>
+                <img src="" alt="photo-list__img">
+              </div>
+              <div class="photo-list__wrap">
+                <a href="" class="photo-list__close"></a>
+                <img src="" alt="photo-list__img">
+              </div>
+              <div class="photo-list__wrap">
+                <a href="" class="photo-list__close"></a>
+                <img src="" alt="photo-list__img">
+              </div>
+              <div class="photo-list__wrap">
+                <a href="" class="photo-list__close"></a>
+                <img src="" alt="photo-list__img">
+              </div>
+              <div class="photo-list__wrap">
+                <a href="" class="photo-list__close"></a>
+                <img src="" alt="photo-list__img">
+              </div>
+              <div class="photo-list__wrap">
+                <a href="" class="photo-list__close"></a>
+                <img src="" alt="photo-list__img">
+              </div>
+              <div class="photo-list__wrap">
+                <a href="" class="photo-list__close"></a>
+                <img src="" alt="photo-list__img">
+              </div>
+            </div>
+          </fieldset>
+        <!---->
+
+          <button type="submit" class="btn btn--send">Отправить отзыв</button>
+        </form>
+      </div>
+    </main>
+    <!---->
+
+    <!--footer-->
+    <footer class="page-footer">
+      <div class="hashtag"><a href="">#visitSEDONA</a></div>
+      <div class="social">
+        <a href="" class="social__item  social__item--tw">Twitter</a>
+        <a href="" class="social__item  social__item--fb">Facebook</a>
+        <a href="" class="social__item  social__item--yt">Youtube</a>
+      </div>
+      <div class="develop"><span>Разработано</span><a href="">HTMLAcademy</a></div>
+    </footer>
+    <!---->
+
+    <!--failure popup-->
+    <div class="popup-failure">
+      <div class="popup-failure__title">ЧТО-ТО ПОШЛО НЕ ТАК!</div>
+      <p class="popup-failure__text">Проверьте поля, выделенные<br> красным, скорее всего вы<br> забыли их заполнить</p>
+      <a href="" class="btn btn--popup-failure">OK</a>
+    </div>
+    <!---->
+
+    <!--success popup-->
+    <div class="popup-success">
+      <div class="popup-success__cont-wrap">
+        <div class="popup-success__title">Ваш отзыв отправлен!</div>
+        <p class="popup-success__text">Спасибо за ваше участие, ваш<br> отзыв уже поступил к нам.<br> В ближайшее время мы<br> опубликуем его на сайте.</p>
+      </div>
+      <div class="popup-success__wrap">
+        <a href="" class="btn btn--popup-success">Закрыть окно</a>
+      </div>
+    </div>
+  </div>
+  <!---->
+</body>
+</html>
