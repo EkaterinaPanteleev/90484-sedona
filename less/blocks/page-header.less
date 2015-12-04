@@ -8,10 +8,23 @@
   }
 
   &__logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
+
+    svg,
+    img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+
+    svg {
+      fill: @blue;
+      z-index: 9;
+    }
+
+    img {
+      z-index: 10;
+    }
   }
 
   &__open-nav {

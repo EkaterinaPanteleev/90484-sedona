@@ -23,7 +23,18 @@
       </nav>
       <!---->
       <div class="page-header__panel">
-        <a href="index.html" class="page-header__logo"><img src="" alt="LOGO"></a>
+        <a href="index.html" class="page-header__logo">
+          <picture>
+          <!--mobile-->
+            <source
+              media="(min-width: 320px)"
+              srcset="img/logo-sedona@3x.png 3x,
+                      img/logo-sedona@2x.png 2x,
+                      img/logo-sedona@1x.png 1x">
+
+            <img src="img/logo-sedona@1x.png" width="67" height="56" alt="LOGO">
+          </picture>
+        </a>
         <a class="page-header__open-nav"><span></span></a>
       </div>
     </header>
