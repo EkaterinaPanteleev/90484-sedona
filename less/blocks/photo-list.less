@@ -5,14 +5,35 @@
     &__wrap {
       display: inline-block;
       vertical-align: top;
+      position: relative;
       width: 70px;
       height: 70px;
-      overflow: hidden;
       margin-right: 35px;
       margin-bottom: 35px;
 
         &:nth-child(3n) {
           margin-right: 0;
+        }
+    }
+
+    &__close {
+      position: absolute;
+      top: -15px;
+      left: 20px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: @gray-form;
+      z-index: 10;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 9px;
+          left: 9px;
+          width: 12px;
+          height: 12px;
+          background: url("../img/spritesheet.png") no-repeat -32px -3px;
         }
     }
 }

@@ -93,7 +93,7 @@
             <legend class="impressions__title">Ваше общее впечатление:</legend>
 
             <div class="impressions__wrap">
-              <input type="radio" name="impressions" value="positive" id="positive" class="impressions__btn">
+              <input type="radio" name="impressions" value="positive" id="positive" class="impressions__btn" checked>
               <label class="impressions__label" for="positive">Скорее положительное</label>
             </div>
 
@@ -126,7 +126,7 @@
 
             <div class="period__wrap">
               <label class="period__label  period__label--required" for="departure">Дата отъезда:</label>
-              <input type="text" name="departure" id="departure" value="28 июня 2015" class="period__field" required>
+              <input type="text" name="departure" id="departure" value="28 июня 2015" class="period__field period__field--border" required>
             </div>
           </fieldset>
         <!---->
@@ -231,7 +231,10 @@
         <!--Photo attach-->
           <fieldset class="photos">
             <legend class="photos__title">Загрузите фотографии:</legend>
-            <input type="file" class="photos__attach-btn" value="ВЫБРАТЬ ФОТОГРАФИИ">
+            <label class="photos__attach">
+              <div class="btn btn--attach">Выбрать фотографии</div>
+              <input type="file"value="">
+            </label>
             <div class="photo-list">
               <div class="photo-list__wrap">
                 <a href="" class="photo-list__close"></a>
@@ -274,11 +277,23 @@
     <!--footer-->
     <footer class="page-footer">
       <div class="hashtag"><a href="">#visitSEDONA</a></div>
-      <div class="social">
-        <a href="" class="social__item  social__item--tw">Twitter</a>
-        <a href="" class="social__item  social__item--fb">Facebook</a>
-        <a href="" class="social__item  social__item--yt">Youtube</a>
-      </div>
+        <div class="social">
+          <a href="" class="social__item  social__item--tw">Twitter
+            <svg id="Layer_1" enable-background="new 0 0 17.5 14.663" viewBox="0 0 17.5 14.663" x="0px" y="0px" width="17.5px" height="14.663px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.0">
+              <path clip-rule="evenodd" fill-rule="evenodd" d="M 11.283 0.153 c 1.736 -0.484 3.074 0.264 3.685 1.15 c 0.694 -0.225 1.372 -0.47 2.072 -0.69 c -0.004 0.841 -0.538 1.478 -0.883 1.728 C 16.861 2.506 17.5 1.86 17.5 1.86 c -0.175 0.977 -1.035 1.746 -1.611 1.977 C 15.65 10.429 12.617 14.793 5.507 14.66 c -0.538 0 0.077 0 -0.46 0 c -0.422 0 -4.29 -0.45 -5.047 -1.843 c 2.341 0.192 4.011 -0.412 4.835 -1.15 c -0.989 -0.293 -2.761 -0.464 -3.07 -2.881 c 0.362 0.105 0.583 0.223 1.228 0.117 C 1.757 8.067 0.385 7.366 0.461 5.218 c 0.294 0.319 1.1 0.523 1.381 0.461 c -0.725 -0.235 -2.03 -3.281 -0.921 -4.836 C 2.794 2.655 4.769 4.364 8.29 4.528 C 8.506 2.288 9.461 0.788 11.283 0.153 Z"/>
+            </svg>
+          </a>
+          <a href="" class="social__item  social__item--fb">Facebook
+            <svg id="Layer_1" enable-background="new 0 0 8.672 18.944" viewBox="0 0 8.672 18.944" x="0px" y="0px" width="8.672px" height="18.944px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.0">
+              <path d="M 6.275 3.356 c 0.799 0 1.599 0 2.398 0 c 0 -1.119 0 -2.237 0 -3.356 c -0.959 0 -1.92 0 -2.878 0 C 2.656 0.181 1.54 2.387 1.948 6.114 H 0 v 3.518 h 1.959 c 0 3.104 0 6.208 0 9.312 c 1.279 0 2.559 0 3.837 0 c 0 -3.104 0 -6.208 0 -9.312 h 2.857 V 6.114 H 5.787 C 5.765 5.069 5.75 3.709 6.275 3.356 Z"/>
+            </svg>
+          </a>
+          <a href="" class="social__item  social__item--yt">Youtube
+            <svg id="Layer_1" enable-background="new 0 0 19.979 14.015" viewBox="0 0 19.979 14.015" x="0px" y="0px" width="19.979px" height="14.015px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.0">
+              <path d="M 17.145 0 H 2.835 C 1.275 0 0 1.275 0 2.835 v 8.345 c 0 1.56 1.275 2.835 2.835 2.835 h 14.31 c 1.56 0 2.835 -1.275 2.835 -2.835 V 2.835 C 19.979 1.275 18.704 0 17.145 0 Z M 7.036 10.392 V 3.623 l 6.769 3.384 L 7.036 10.392 Z"/>
+            </svg>
+          </a>
+        </div>
       <div class="develop"><span>Разработано</span><a href="">HTMLAcademy</a></div>
     </footer>
     <!---->

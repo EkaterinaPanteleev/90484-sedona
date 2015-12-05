@@ -22,14 +22,46 @@
         }
     }
 
+    &__btn {
+      display: none;
+    }
+
     &__label {
       display: inline-block;
-      margin-left: 50px;
+      position: relative;
+      margin-left: 78px;
       color: #000;
       font-weight: bold;
       text-transform: none;
       font-size: @font-size-input;
       line-height: 26px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -13px;
+          left: -80px;
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background-color: @gray-form;
+        }
+
+        &::after {
+          content: "";
+          display: none;
+          position: absolute;
+          top: 4px;
+          left: -62.5px;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          background-color: @gray-dark;
+        }
+    }
+
+    &__btn:checked+label::after {
+      display: block;
     }
 
 }
