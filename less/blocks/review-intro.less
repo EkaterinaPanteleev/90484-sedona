@@ -1,6 +1,24 @@
 .review-intro {
   &__img {
-    min-height: 160px;
-    background-color: @welcome-bg;
+    position: relative;
+    width: 320px;
+    height: 158px;
+    background:
+      url("../img/intro-triangle.svg") no-repeat 50% bottom,
+      @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 48% 40%;
+
+    &--sedona-text {
+      position: absolute;
+      top: 50px;
+      left: 70px;
+      fill: #fff;
+    }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    &__img {
+      background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 60% 25%;
+      background-size: cover;
+    }
   }
 }
