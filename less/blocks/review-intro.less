@@ -1,0 +1,33 @@
+.review-intro {
+  &__img {
+    position: relative;
+    width: 320px;
+    height: 158px;
+    background: @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 48% 40%;
+
+    &::after {
+      content: "";
+      width: 1202px;
+      height: 57px;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/intro-triangle.svg");
+    }
+
+    &--sedona-text {
+      position: absolute;
+      top: 50px;
+      left: 70px;
+      fill: #fff;
+    }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    &__img {
+      background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 60% 25%;
+      background-size: cover;
+    }
+  }
+}

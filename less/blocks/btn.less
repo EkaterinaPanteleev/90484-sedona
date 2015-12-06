@@ -11,8 +11,33 @@
   font-weight: bold;
 
   background-color: @blue;
+  cursor: pointer;
 
     &--search-block {
       width: 280px;
+    }
+
+    &--send {
+      width: 280px;
+      border: none;
+      outline: none;
+      margin: 0 20px;
+      font-family: "PT Sans", "Arial", sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 80px;
+    }
+
+    &--popup-failure {
+      width: 180px;
+    }
+
+    &--popup-success {
+      width: 280px;
+    }
+
+    &--attach {
+      width: 280px;
+      color: @gray-minus;
+      background-color: @gray-form;
     }
 }

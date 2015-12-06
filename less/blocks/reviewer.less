@@ -1,0 +1,51 @@
+.reviewer {
+  border-bottom: 1px solid @gray-form-border;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+    &__title {
+      margin-bottom: 26px;
+      margin-left: 8px;
+      padding-top: 20px;
+      font-size: @font-size-title;
+      line-height: 26px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    &__label {
+      display: block;
+      margin-left: 21px;
+      margin-bottom: 6px;
+      line-height: 26px;
+
+      &--required {
+
+        &::after {
+          content: "*";
+          color: @red;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    &__field {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 15px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 22px;
+      padding-right: 20px;
+      background-color: @gray-form;
+      color: #000;
+      font-weight: bold;
+      text-transform: none;
+      font-size: @font-size-input;
+      line-height: 26px;
+      font-family: "PT Sans", "Arial", sans-serif;
+      border: none;
+      outline: none;
+    }
+}
