@@ -3,9 +3,18 @@
     position: relative;
     width: 320px;
     height: 158px;
-    background:
-      url("../img/intro-triangle.svg") no-repeat 50% bottom,
-      @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 48% 40%;
+    background: @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 48% 40%;
+
+    &::after {
+      content: "";
+      width: 1202px;
+      height: 57px;
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/intro-triangle.svg");
+    }
 
     &--sedona-text {
       position: absolute;
