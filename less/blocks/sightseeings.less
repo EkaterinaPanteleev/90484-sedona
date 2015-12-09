@@ -6,6 +6,7 @@
 
     &__title {
       margin-bottom: 30px;
+      margin-top: 0;
       padding-top: 20px;
       font-size: @font-size-title;
       line-height: 26px;
@@ -13,4 +14,40 @@
       font-weight: bold;
       text-align: center;
     }
+}
+
+@media(min-width: @screen_md) {
+  .sightseeings {
+    border: none;
+    padding: 0;
+    padding-left: 59px;
+    padding-right: 59px;
+
+    &__wrap-title {
+      text-align: center;
+      margin-bottom: 52px;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: -27px;
+        display: block;
+        border-bottom: 1px solid @gray-form-hr;
+      }
+    }
+
+    &__title {
+      position: relative;
+      margin: 0 auto;
+      width: 280px;
+      display: block;
+      text-align: center ;
+      padding-left: 56px;
+      padding-right: 56px;
+      font-size: @font-size-title+3;
+      line-height: 26px;
+      background-color: #fff;
+      z-index: 2;
+    }
+  }
 }

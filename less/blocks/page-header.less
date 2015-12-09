@@ -1,4 +1,5 @@
 .page-header {
+
   .clearfix;
 
   &__panel {
@@ -62,4 +63,19 @@
       }
   }
 
+}
+
+@media(min-width: @screen_md) {
+  .page-header {
+    position: relative;
+
+    &__open-nav {
+      display: none;
+    }
+
+    &__panel {
+      padding-bottom: 40px;
+
+    }
+  }
 }

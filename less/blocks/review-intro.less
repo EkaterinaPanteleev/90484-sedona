@@ -3,7 +3,7 @@
     position: relative;
     width: 320px;
     height: 158px;
-    background: @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 48% 40%;
+    background: @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 50% 45%;
 
     &::after {
       content: "";
@@ -26,8 +26,35 @@
 
   @media (min-resolution: 1.5dppx) {
     &__img {
-      background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 60% 25%;
+      background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 80% 90%;
       background-size: cover;
     }
   }
+}
+
+@media(min-width: @screen_md) {
+  .review-intro {
+    &__img {
+      width: 100%;
+      height: 290px;
+      background-position: 50% 55%;
+
+      &--sedona-text {
+        width: 459px;
+        height: 77px;
+        top: 100px;
+        left: 155px;
+      }
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      &__img {
+        background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 60% 80%;
+        background-size: cover;
+      }
+    }
+
+  }
+
+
 }

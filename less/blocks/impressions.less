@@ -7,7 +7,6 @@
     &__title {
       margin-bottom: 36px;
       margin-left: 22px;
-      padding-top: 18px;
       font-size: @font-size-title;
       line-height: 26px;
       color: #000;
@@ -64,5 +63,45 @@
     &__btn:checked+label::after {
       display: block;
     }
+}
 
+@media(min-width: @screen_md) {
+  .impressions {
+    border: none;
+    padding: 0;
+    padding-left: 59px;
+    padding-right: 59px;
+    margin-bottom: 27px;
+
+    &__wrap-title {
+      text-align: center;
+      margin-bottom: 53px;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: -13px;
+        display: block;
+        border-bottom: 1px solid @gray-form-hr;
+      }
+    }
+
+    &__title {
+      position: relative;
+      margin: 0;
+      display: inline;
+      text-align: center ;
+      padding-left: 64px;
+      padding-right: 64px;
+      font-size: @font-size-title+3;
+      line-height: 26px;
+      background-color: #fff;
+      z-index: 2;
+    }
+
+    &__wrap-fields {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

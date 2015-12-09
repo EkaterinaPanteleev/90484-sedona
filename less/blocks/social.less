@@ -1,5 +1,6 @@
 .social {
   margin-bottom: 43px;
+  font-size: 0;
 
     &__item {
       display: inline-block;
@@ -9,7 +10,6 @@
       height: 48px;
       margin-right: 6px;
       background-color: @blue;
-      font-size: 0;
 
         &:last-child {
           margin-right: 0;
@@ -42,6 +42,11 @@
           }
         }
     }
+}
 
-
+@media(min-width: @screen_md) {
+  .social {
+    margin-bottom: 0;
+    margin-right: 62px;
+  }
 }
