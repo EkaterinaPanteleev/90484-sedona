@@ -22,6 +22,10 @@ fieldset {
   padding: 0;
   margin: 0;
 }
+label {
+  display: inline-block;
+  vertical-align: top;
+}
 legend {
   padding: 0;
 }
@@ -106,6 +110,9 @@ legend {
   border-bottom: 1px solid #678fa8;
   border-top: 1px solid #9ac2db;
 }
+.main-nav__item--logo {
+  border: none;
+}
 .main-nav__item a {
   display: block;
   color: #fff;
@@ -127,8 +134,8 @@ legend {
 @media (min-width: 768px) {
   .main-nav {
     position: absolute;
-    padding-left: 31px;
-    padding-right: 36px;
+    width: 100%;
+    font-size: 0;
     z-index: 8;
   }
   .main-nav__item {
@@ -136,16 +143,7 @@ legend {
     vertical-align: top;
     background-color: #fff;
     border: none;
-    margin-right: 47px;
-  }
-  .main-nav__item:nth-child(2) {
-    margin-right: 200px;
-  }
-  .main-nav__item:nth-child(3) {
-    margin-right: 60px;
-  }
-  .main-nav__item:last-child {
-    margin-right: 0;
+    width: 20%;
   }
   .main-nav__item a {
     color: #000;
@@ -237,6 +235,14 @@ legend {
     height: 512px;
     background-position: 70% 27%;
   }
+  .welcome__img::after {
+    width: 770px;
+    height: 36px;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+    background-size: cover;
+  }
   .welcome__img--welcome-text {
     width: 190px;
     height: 46px;
@@ -294,8 +300,7 @@ legend {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 0;
   }
 }
 .town-reason__item-img img {
@@ -551,6 +556,7 @@ legend {
     padding-bottom: 30px;
     text-align: center;
     border: none;
+    width: 33%;
   }
   .square-desc__title {
     font-size: 21px;
@@ -560,10 +566,9 @@ legend {
     margin-bottom: 10px;
   }
   .square-desc__text {
-    white-space: pre-wrap;
-    width: 160px;
-    margin: 0 auto;
-    padding-top: 15px;
+    padding-top: 8px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 }
 .road-desc {
@@ -587,6 +592,7 @@ legend {
     padding-bottom: 30px;
     text-align: center;
     border: none;
+    width: 33%;
   }
   .road-desc__title {
     font-size: 21px;
@@ -596,10 +602,9 @@ legend {
     margin-bottom: 10px;
   }
   .road-desc__text {
-    white-space: pre-wrap;
-    width: 160px;
-    margin: 0 auto;
-    padding-top: 23px;
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-top: 8px;
   }
 }
 .tourism-desc {
@@ -621,6 +626,7 @@ legend {
     padding-top: 45px;
     padding-bottom: 30px;
     text-align: center;
+    width: 33%;
   }
   .tourism-desc__title {
     font-size: 21px;
@@ -630,10 +636,9 @@ legend {
     margin-bottom: 10px;
   }
   .tourism-desc__text {
-    white-space: pre-wrap;
-    width: 160px;
-    margin: 0 auto;
-    padding-top: 23px;
+    padding-top: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 .search-block {
@@ -668,6 +673,8 @@ legend {
   }
   .search-block__text {
     margin-bottom: 43px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 .map {
@@ -693,8 +700,11 @@ legend {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 60px;
-    padding-right: 40px;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 .hashtag {
@@ -708,9 +718,9 @@ legend {
 }
 @media (min-width: 768px) {
   .hashtag {
+    width: 33%;
     margin-bottom: 0;
     margin-top: 12px;
-    margin-right: 115px;
   }
 }
 .social {
@@ -749,8 +759,8 @@ legend {
 }
 @media (min-width: 768px) {
   .social {
+    width: 33%;
     margin-bottom: 0;
-    margin-right: 62px;
   }
 }
 .develop {
@@ -772,8 +782,15 @@ legend {
 }
 @media (min-width: 768px) {
   .develop {
+    width: 33%;
     margin-bottom: 0;
     margin-top: 10px;
+    text-align: center;
+  }
+  .develop span {
+    margin: 0;
+    padding-left: 20px;
+    margin-right: 15px;
   }
 }
 .btn {
@@ -883,6 +900,16 @@ legend {
     height: 290px;
     background-position: 50% 55%;
   }
+  .review-intro__img::after {
+    width: 770px;
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+    background-size: cover;
+  }
   .review-intro__img--sedona-text {
     width: 459px;
     height: 77px;
@@ -954,11 +981,17 @@ legend {
   color: #000;
   font-weight: bold;
 }
+.reviewer__wrap {
+  font-size: 0;
+}
 .reviewer__label {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   margin-left: 21px;
   margin-bottom: 6px;
+  font-size: 14px;
   line-height: 26px;
+  cursor: pointer;
 }
 .reviewer__label--required::after {
   content: "*";
@@ -1019,8 +1052,11 @@ legend {
     display: -ms-flexbox;
     display: flex;
   }
+  .reviewer__field {
+    width: 176px;
+  }
   .reviewer__wrap {
-    margin-right: 61px;
+    margin-right: 58px;
   }
   .reviewer__wrap:last-child {
     margin-right: 0;
@@ -1122,6 +1158,9 @@ legend {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
 }
 .period {
@@ -1139,11 +1178,17 @@ legend {
   color: #000;
   font-weight: bold;
 }
+.period__wrap {
+  font-size: 0;
+}
 .period__label {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   margin-left: 21px;
   margin-bottom: 8px;
+  font-size: 14px;
   line-height: 26px;
+  cursor: pointer;
 }
 .period__label--required::after {
   content: "*";
@@ -1274,9 +1319,15 @@ legend {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .period__wrap {
+    width: 176px;
   }
   .period__counter-wrap {
     margin: 0;
@@ -1292,9 +1343,6 @@ legend {
   .period__plus-btn {
     width: 61px;
     margin: 0;
-  }
-  .period__field {
-    width: 176px;
   }
   .period__field--days {
     width: 54px;
@@ -1319,10 +1367,13 @@ legend {
   font-weight: bold;
 }
 .travellers__label {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   margin-left: 22px;
   margin-bottom: 8px;
   line-height: 26px;
+  font-size: 14px;
+  cursor: pointer;
 }
 .travellers__label--required::after {
   content: "*";
@@ -1511,7 +1562,6 @@ legend {
     margin-left: 0;
     margin: auto;
     margin-bottom: 5px;
-    padding-right: 35px;
   }
   .travellers__counter-wrap {
     margin: auto;
@@ -1660,6 +1710,7 @@ legend {
     display: -ms-flexbox;
     display: flex;
     padding-left: 97px;
+    padding-right: 97px;
   }
   .checkbox-list__col {
     display: -webkit-flex;
@@ -1668,9 +1719,10 @@ legend {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 50%;
   }
   .checkbox-list__col:first-child {
-    margin-right: 68px;
+    margin-right: 55px;
   }
   .checkbox-list__wrap {
     margin-bottom: 65px;
@@ -1867,7 +1919,7 @@ legend {
 }
 .popup-success {
   position: fixed;
-  display: block;
+  display: none;
   width: 320px;
   top: 20%;
   left: 50%;
