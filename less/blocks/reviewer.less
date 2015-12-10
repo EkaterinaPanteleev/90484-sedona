@@ -14,11 +14,18 @@
       font-weight: bold;
     }
 
+    &__wrap {
+      font-size: 0;
+    }
+
     &__label {
-      display: block;
+      display: inline-block;
+      vertical-align: top;
       margin-left: 21px;
       margin-bottom: 6px;
+      font-size: @font-size-base;
       line-height: 26px;
+      cursor: pointer;
 
       &--required {
 
@@ -88,8 +95,12 @@
       display: flex;
     }
 
+    &__field {
+      width: 176px;
+    }
+
     &__wrap {
-      margin-right: 61px;
+      margin-right: 58px;
 
       &:last-child {
         margin-right: 0;

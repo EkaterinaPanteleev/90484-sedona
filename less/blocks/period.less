@@ -14,11 +14,18 @@
       font-weight: bold;
     }
 
+    &__wrap {
+      font-size: 0;
+    }
+
     &__label {
-      display: block;
+      display: inline-block;
+      vertical-align: top;
       margin-left: 21px;
       margin-bottom: 8px;
+      font-size: @font-size-base;
       line-height: 26px;
+      cursor: pointer;
 
       &--required {
 
@@ -63,6 +70,7 @@
     }
 
     &__counter {
+
       margin-bottom: 14px;
     }
 
@@ -171,7 +179,12 @@
 
     &__wrap-fields {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
+    }
+
+    &__wrap {
+      width: 176px;
     }
 
     &__counter-wrap {
@@ -193,7 +206,6 @@
     }
 
     &__field {
-      width: 176px;
 
       &--days {
         width: 54px;
