@@ -1,6 +1,6 @@
 .reason-features {
   padding-right: 20px;
-  padding-top: 40px;
+  padding-top: 35px;
   padding-bottom: 23px;
 
     &__home {
@@ -48,4 +48,72 @@
       color: #000;
       font-weight: bold;
     }
+}
+
+//tablet
+
+@media(min-width: @screen_md) {
+  .reason-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 48px;
+    padding-right: 45px;
+    padding-bottom: 33px;
+
+    &__home,
+    &__food,
+    &__gift {
+      padding-left: 0;
+      text-align: center;
+      margin-top: 125px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: @font-size-title+3;
+      line-height: 26px;
+    }
+
+    &__gift {
+      p {
+        width: 166px;
+      }
+    }
+
+    &__text {
+      margin: 0;
+      width: 158px;
+    }
+
+    &__home-img {
+      top: -98px;
+      left: 40px;
+
+      svg {
+        width: 75px;
+        height: 70px;
+      }
+    }
+
+    &__food-img {
+      top: -98px;
+      left: 43px;
+
+      svg {
+        width: 75px;
+        height: 70px;
+      }
+    }
+
+    &__gift-img {
+      top: -102px;
+      left: 48px;
+
+      svg {
+        width: 65px;
+        height: 76px;
+      }
+    }
+  }
 }

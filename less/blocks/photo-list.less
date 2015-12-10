@@ -6,14 +6,22 @@
       display: inline-block;
       vertical-align: top;
       position: relative;
-      width: 70px;
-      height: 70px;
       margin-right: 35px;
       margin-bottom: 35px;
+      line-height: 0;
 
         &:nth-child(3n) {
           margin-right: 0;
         }
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+    }
+
+    &__file-name {
+      display: none;
     }
 
     &__close {
@@ -37,3 +45,42 @@
         }
     }
 }
+
+@media(min-width: @screen_md) {
+  .photo-list {
+    padding-left: 35px;
+
+    &__wrap {
+      margin-right: 65px;
+      margin-bottom: 28px;
+
+        img {
+          width: 140px;
+          height: 140px;
+          margin-bottom: 15px;
+        }
+    }
+
+    &__file-name {
+      display: block;
+      font-size: @font-size-base;
+      line-height: 26px;
+    }
+
+    &__close {
+      top: -30px;
+      left: 110px;
+      width: 60px;
+      height: 60px;
+
+      &::before {
+        top: 19px;
+        left: 19px;
+        width: 23px;
+        height: 23px;
+        background: url("../img/spritesheet.png") no-repeat -50px -3px;
+      }
+    }
+  }
+}
+

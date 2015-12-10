@@ -5,10 +5,12 @@
 
     &__wrap {
       margin-bottom: 55px;
+    }
 
-        &:last-child {
-          margin-bottom: 30px;
-        }
+    &__col:last-child {
+      li:last-child {
+        margin-bottom: 30px;
+      }
     }
 
     &__item {
@@ -23,6 +25,7 @@
       color: #000;
       text-transform: none;
       font-weight: bold;
+      cursor: pointer;
 
       &::before {
         content: "";
@@ -51,3 +54,30 @@
       display: block;
     }
 }
+
+@media(min-width: @screen_md) {
+  .checkbox-list {
+    display: flex;
+    padding-left: 97px;
+    padding-right: 97px;
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      &:first-child {
+        margin-right: 55px;
+      }
+    }
+
+    &__wrap {
+      margin-bottom: 65px;
+
+      &:last-child {
+        margin-bottom: 55px;
+      }
+    }
+  }
+}
+

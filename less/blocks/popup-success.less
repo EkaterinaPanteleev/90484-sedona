@@ -27,9 +27,12 @@
     }
 
     &__text {
+      margin: 0 auto;
+      margin-bottom: 35px;
+      width: 218px;
       line-height: 24px;
       text-align: center;
-      margin-bottom: 35px;
+
     }
 
     &__wrap {
@@ -37,4 +40,36 @@
       padding-bottom: 20px;
       background-color: @gray-form;
     }
+}
+
+@media(min-width: @screen_md) {
+  .popup-success {
+    width: 640px;
+
+    &__cont-wrap {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    &__title {
+      margin: 0 auto;
+      margin-bottom: 25px;
+      padding-top: 20px;
+      width: 350px;
+      font-size: @font-size-title+12;
+      line-height: 40px;
+    }
+
+    &__text {
+      margin: 0 auto;
+      margin-bottom: 35px;
+      width: 418px;
+    }
+
+    &__wrap {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+  }
 }
