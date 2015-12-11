@@ -143,6 +143,8 @@
     }
 }
 
+/* tablet-layout */
+
 @media(min-width: @screen_md) {
   .period {
     border: none;
@@ -210,6 +212,36 @@
         padding-left: 0;
         padding-right: 0;
         text-align: center;
+      }
+    }
+  }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .period {
+    &__wrap {
+      width: 278px;
+    }
+
+    &__counter-wrap {
+    width: 145px;
+    margin-right: 6px;
+
+      span {
+        display: inline;
+        margin-left: 43px;
+      }
+    }
+
+    &__minus-btn {
+      margin-right: 6px;
+    }
+
+    &__field {
+      &--days {
+        padding-left: 10px;
       }
     }
   }
