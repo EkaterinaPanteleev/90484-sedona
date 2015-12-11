@@ -1,0 +1,110 @@
+.reviewer {
+  border-bottom: 1px solid @gray-form-border;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+    &__title {
+      margin-bottom: 26px;
+      margin-left: 8px;
+      padding-top: 8px;
+      font-size: @font-size-title;
+      line-height: 26px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    &__wrap {
+      font-size: 0;
+    }
+
+    &__label {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 21px;
+      margin-bottom: 6px;
+      font-size: @font-size-base;
+      line-height: 26px;
+      cursor: pointer;
+
+      &--required {
+
+        &::after {
+          content: "*";
+          color: @red;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    &__field {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 15px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 22px;
+      padding-right: 20px;
+      background-color: @gray-form;
+      color: #000;
+      font-weight: bold;
+      text-transform: none;
+      font-size: @font-size-input;
+      line-height: 26px;
+      font-family: "PT Sans", "Arial", sans-serif;
+      border: none;
+      outline: none;
+    }
+}
+
+@media(min-width: @screen_md) {
+  .reviewer {
+    border: none;
+    padding: 0;
+    padding-left: 59px;
+    padding-right: 59px;
+    margin-bottom: 50px;
+
+    &__wrap-title {
+      text-align: center;
+      margin-bottom: 25px;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: -13px;
+        display: block;
+        border-bottom: 1px solid @gray-form-hr;
+      }
+    }
+
+    &__title {
+      position: relative;
+      margin: 0;
+      display: inline;
+      text-align: center ;
+      padding-left: 47px;
+      padding-right: 47px;
+      font-size: @font-size-title+3;
+      line-height: 26px;
+      background-color: #fff;
+      z-index: 2;
+    }
+
+    &__wrap-fields {
+      display: flex;
+    }
+
+    &__field {
+      width: 176px;
+    }
+
+    &__wrap {
+      margin-right: 58px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

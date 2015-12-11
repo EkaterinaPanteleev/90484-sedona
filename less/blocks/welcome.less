@@ -1,8 +1,56 @@
 .welcome {
 
   &__img {
-    min-height: 390px;
-    background-color: @welcome-bg;
+    position: relative;
+    width: 320px;
+    height: 393px;
+    background: @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 60% 20%;
+
+      &::after {
+        content: "";
+        width: 1202px;
+        height: 57px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/intro-triangle.svg");
+      }
+
+      &--welcome-text {
+        position: absolute;
+        top: 50px;
+        left: 88px;
+        fill: @blue;
+      }
+
+      &--gorgeous-text {
+        position: absolute;
+        top: 95px;
+        left: 61px;
+        fill: @brown;
+      }
+
+      &--sedona-text {
+        position: absolute;
+        top: 177px;
+        left: 18px;
+        fill: #fff;
+      }
+
+      &--because-text {
+        position: absolute;
+        top: 290px;
+        left: 60px;
+        fill: #fff;
+      }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    &__img {
+      background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 60% 25%;
+      background-size: cover;
+    }
   }
 
   &__header {
@@ -10,16 +58,16 @@
   }
 
   &__wrap {
-
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 40px;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
   }
 
   &__title {
+    width: 257px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 28px;
     font-size: @font-size-h1;
     line-height: 26px;
@@ -33,5 +81,69 @@
     font-size: @font-size-base;
     line-height: 26px;
     color: @gray-dark;
+  }
+}
+
+@media(min-width: @screen_md) {
+  .welcome {
+    &__img {
+      width: 768px;
+      height: 512px;
+      background-position: 70% 27%;
+
+      &::after {
+        width: 770px;
+        height: 36px;
+        left: 0;
+        transform: none;
+        background-size: cover;
+      }
+
+      &--welcome-text {
+        width: 190px;
+        height: 46px;
+        top: 75px;
+        left: 290px;
+      }
+
+      &--gorgeous-text {
+        width: 256px;
+        height: 27px;
+        top: 133px;
+        left: 255px;
+      }
+
+      &--sedona-text {
+        width: 457px;
+        height: 80px;
+        top: 215px;
+        left: 158px;
+      }
+
+      &--because-text {
+        width: 298px;
+        height: 80px;
+        top: 350px;
+        left: 230px;
+      }
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      &__img {
+        background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 65% 35%;
+      }
+    }
+
+    &__wrap {
+      padding-top: 55px;
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      width: 443px;
+      margin: 0 auto;
+      margin-bottom: 28px;
+      font-size: @font-size-h1+3;
+    }
   }
 }
