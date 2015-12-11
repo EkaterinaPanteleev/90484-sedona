@@ -1,0 +1,310 @@
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  background-color: #fff;
+  color: #333333;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+.page-header {
+  clearfix: after;
+}
+.page-header__panel {
+  position: relative;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.page-header__logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+}
+.page-header__open-nav {
+  display: block;
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  cursor: pointer;
+}
+.page-header__open-nav:before,
+.page-header__open-nav:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+}
+.page-header__open-nav:before {
+  top: -9px;
+}
+.page-header__open-nav:after {
+  top: 9px;
+}
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.main-nav__item {
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #81b3d2;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+}
+.main-nav__item:first-child {
+  border-top: none;
+}
+.main-nav__item:last-child {
+  border-bottom: none;
+}
+.main-nav__item a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.welcome__img {
+  min-height: 390px;
+  background-color: #9aa9c5;
+}
+.welcome__header {
+  text-align: center;
+}
+.welcome__wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+.welcome__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  font-weight: bold;
+}
+.welcome__text {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+.reasons-list__wrap {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #eee;
+}
+.town-reason__item-img {
+  min-height: 256px;
+  background-color: #9aa9c5;
+}
+.town-desc {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 65px;
+  padding-bottom: 25px;
+  background-color: #81b3d2;
+}
+.town-desc__title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 10px;
+  color: #fff;
+}
+.town-desc__number {
+  margin-bottom: 23px;
+  color: #fff;
+}
+.town-desc__text {
+  color: #fff;
+}
+.reason-features {
+  padding-left: 70px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.reason-features__home {
+  margin-bottom: 28px;
+}
+.reason-features__food {
+  margin-bottom: 28px;
+}
+.reason-features__title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  font-weight: bold;
+}
+.bridge-reason__item-img {
+  min-height: 256px;
+  background-color: #9aa9c5;
+}
+.bridge-desc {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background-color: #81b3d2;
+}
+.bridge-desc__title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 10px;
+  color: #fff;
+}
+.bridge-desc__number {
+  margin-bottom: 23px;
+  color: #fff;
+}
+.bridge-desc__text {
+  color: #fff;
+}
+.square-desc {
+  padding-top: 35px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.square-desc__title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 10px;
+  color: #000;
+}
+.square-desc__number {
+  margin-bottom: 23px;
+}
+.road-desc {
+  padding-top: 35px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.road-desc__title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 10px;
+  color: #000;
+}
+.road-desc__number {
+  margin-bottom: 23px;
+}
+.tourism-desc {
+  padding-top: 35px;
+  padding-bottom: 12px;
+}
+.tourism-desc__title {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 10px;
+  color: #000;
+}
+.tourism-desc__number {
+  margin-bottom: 23px;
+}
+.search-block {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.search-block__title {
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  font-weight: bold;
+}
+.search-block__text {
+  margin-bottom: 35px;
+  line-height: 24px;
+}
+.map {
+  min-height: 350px;
+  background-color: #9aa9c5;
+}
+.page-footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 35px;
+  padding-bottom: 34px;
+  text-align: center;
+}
+.hashtag {
+  margin-bottom: 35px;
+}
+.hashtag a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  font-weight: bold;
+}
+.social {
+  margin-bottom: 43px;
+}
+.social__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  background-color: #81b3d2;
+  font-size: 0;
+}
+.social__item:last-child {
+  margin-right: 0;
+}
+.develop span {
+  line-height: 26px;
+  color: #000;
+}
+.develop a {
+  color: #000;
+}
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  background-color: #81b3d2;
+}
+.btn--search-block {
+  width: 280px;
+}
