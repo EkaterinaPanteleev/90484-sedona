@@ -65,12 +65,12 @@
     }
 }
 
+/* table-layout */
+
 @media(min-width: @screen_md) {
   .impressions {
     border: none;
     padding: 0;
-    padding-left: 59px;
-    padding-right: 59px;
     margin-bottom: 27px;
 
     &__wrap-title {
@@ -104,5 +104,26 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
+  }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_md) {
+  .impressions {
+     &__wrap-fields {
+      justify-content: flex-start;
+      padding: 0 90px;
+    }
+
+    &__wrap {
+      width: 40%;
+
+    }
+
+    &__wrap:first-child {
+      margin-right: 50px;
+    }
+
   }
 }

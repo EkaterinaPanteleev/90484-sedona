@@ -14,7 +14,14 @@
     &__number {
       margin-bottom: 23px;
     }
+
+    &__text {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 }
+
+/* tablet-layout */
 
 @media(min-width: @screen_md) {
   .road-desc {
@@ -40,3 +47,15 @@
   }
 }
 
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .road-desc {
+    padding-bottom: 50px;
+
+    &__text {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}

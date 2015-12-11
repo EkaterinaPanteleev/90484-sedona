@@ -19,6 +19,8 @@
     }
 }
 
+/* table-layout */
+
 @media(min-width: @screen_md) {
   .review-header {
     border: none;
@@ -44,6 +46,20 @@
       font-size: @font-size-base;
       line-height: 26px;
       color: @gray-dark;
+    }
+  }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .review-header {
+    &__wrap {
+      padding-top: 52px;
+    }
+
+    &__text {
+      padding: 0 215px;
     }
   }
 }

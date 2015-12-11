@@ -84,6 +84,8 @@
   }
 }
 
+/* table-layout */
+
 @media(min-width: @screen_md) {
   .welcome {
     &__img {
@@ -146,4 +148,48 @@
       font-size: @font-size-h1+3;
     }
   }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .welcome {
+
+    &__img {
+      width: 1200px;
+      height: 512px;
+      background-position: 70% 27%;
+
+      &::after {
+        width: 1200px;
+        height: 57px;
+        left: 0;
+        transform: none;
+        background-size: cover;
+      }
+
+      &--welcome-text {
+        left: 505px;
+      }
+
+      &--gorgeous-text {
+        left: 470px;
+      }
+
+      &--sedona-text {
+        left: 373px;
+      }
+
+      &--because-text {
+        left: 445px;
+      }
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      &__img {
+        background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 65% 30%;
+      }
+    }
+  }
+
 }
