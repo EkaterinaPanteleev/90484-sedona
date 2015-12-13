@@ -14,9 +14,18 @@
     font-size: 0;
     width: 27px;
     height: 34px;
-    background: url("../img/htmlacademy.svg") no-repeat;
+
+    &:hover {
+      fill: @blue;
+    }
+
+    &:active {
+      fill: @gray-develop-hover;
+    }
   }
 }
+
+/* tablet-layout */
 
 @media(min-width: @screen_md) {
   .develop {
@@ -30,6 +39,16 @@
       padding-left: 20px;
       margin-right: 15px;
 
+    }
+  }
+}
+
+/* desktop-layout */
+@media(min-width: @screen_lg) {
+  .develop {
+    span {
+      padding-left: 155px;
+      margin-right: 11px;
     }
   }
 }

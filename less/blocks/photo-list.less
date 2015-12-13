@@ -34,6 +34,22 @@
       background-color: @gray-form;
       z-index: 10;
 
+      &:hover {
+        background-color: @gray-form-border;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        background-color: @gray-btn-active;
+
+        &::before {
+          opacity: .2;
+        }
+      }
+
         &::before {
           content: "";
           position: absolute;
@@ -42,9 +58,13 @@
           width: 12px;
           height: 12px;
           background: url("../img/spritesheet.png") no-repeat -32px -3px;
+          opacity: 0.6;
         }
     }
 }
+
+/*tablet-layout */
+
 
 @media(min-width: @screen_md) {
   .photo-list {
@@ -79,6 +99,26 @@
         width: 23px;
         height: 23px;
         background: url("../img/spritesheet.png") no-repeat -50px -3px;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+/*desktop-layout */
+@media(min-width: @screen_lg) {
+  .photo-list {
+    padding-left: 0;
+
+    &__wrap {
+      margin-right: 64px;
+
+      &:nth-child(3n) {
+        margin-right: 64px;
+      }
+
+      &:nth-child(5n) {
+        margin-right: 0;
       }
     }
   }

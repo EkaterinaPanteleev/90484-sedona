@@ -24,12 +24,12 @@
     }
 }
 
+/* tablet-layout */
+
 @media(min-width: @screen_md) {
   .photos {
     border: none;
     padding: 0;
-    padding-left: 59px;
-    padding-right: 59px;
     margin-bottom: 10px;
 
     &__wrap-title {
@@ -62,8 +62,19 @@
 
     &__attach {
       margin-left: 96px;
-
     }
 
+  }
+}
+
+/*desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .photos {
+    margin-bottom: 15px;
+
+    &__attach {
+      margin-left: 0;
+    }
   }
 }

@@ -32,6 +32,8 @@
   }
 }
 
+/* table-layout */
+
 @media(min-width: @screen_md) {
   .review-intro {
     &__img {
@@ -65,6 +67,36 @@
     }
 
   }
+}
 
+/* desktop-layout */
 
+@media(min-width: @screen_lg) {
+  .review-intro {
+    &__img {
+      width: 1200px;
+      height: 300px;
+      background-position: 60% 55%;
+
+      &::after {
+        width: 1200px;
+        height: 57px;
+        left: 0;
+        transform: none;
+        background-size: cover;
+      }
+
+      &--sedona-text {
+        left: 373px;
+      }
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      &__img {
+        background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 60% 55%;
+        background-size: cover;
+      }
+    }
+
+  }
 }

@@ -54,15 +54,27 @@
       font-family: "PT Sans", "Arial", sans-serif;
       border: none;
       outline: none;
+
+      &:hover {
+        background-color: @gray-form-border;
+      }
+
+      &:focus {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        background-color: #fff;
+        border: 2px solid @gray-form-border;
+      }
     }
 }
+
+/* table-layout */
 
 @media(min-width: @screen_md) {
   .reviewer {
     border: none;
     padding: 0;
-    padding-left: 59px;
-    padding-right: 59px;
     margin-bottom: 50px;
 
     &__wrap-title {
@@ -101,6 +113,25 @@
 
     &__wrap {
       margin-right: 58px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .reviewer {
+
+    &__field {
+      width: 278px;
+    }
+
+    &__wrap {
+      margin-right: 61px;
 
       &:last-child {
         margin-right: 0;
