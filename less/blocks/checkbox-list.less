@@ -27,6 +27,24 @@
       font-weight: bold;
       cursor: pointer;
 
+      &:hover {
+
+        &::before {
+          background-color: @gray-form-border;
+        }
+      }
+
+      &:active {
+
+        &::before {
+          background-color: @gray-btn-active;
+        }
+
+        &::after {
+          opacity: 0.2;
+        }
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -55,6 +73,8 @@
     }
 }
 
+/* tablet-layout */
+
 @media(min-width: @screen_md) {
   .checkbox-list {
     display: flex;
@@ -81,3 +101,25 @@
   }
 }
 
+/*desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .checkbox-list {
+    padding: 0;
+
+    &__col {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0;
+
+      &:first-child {
+        margin-right: 80px;
+      }
+    }
+
+    &__warp {
+      margin-bottom: 55px;
+    }
+  }
+}

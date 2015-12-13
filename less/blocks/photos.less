@@ -24,6 +24,8 @@
     }
 }
 
+/* tablet-layout */
+
 @media(min-width: @screen_md) {
   .photos {
     border: none;
@@ -60,8 +62,19 @@
 
     &__attach {
       margin-left: 96px;
-
     }
 
+  }
+}
+
+/*desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .photos {
+    margin-bottom: 15px;
+
+    &__attach {
+      margin-left: 0;
+    }
   }
 }

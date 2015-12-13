@@ -10,7 +10,7 @@
   }
 
   &__item {
-    background-color: @blue;
+
     border-bottom: 1px solid @blue-dark;
     border-top: 1px solid @blue-light;
 
@@ -21,12 +21,22 @@
     a {
       display: block;
       color: #fff;
+      background-color: @blue;
       font-size: @font-size-nav;
       line-height: 40px;
       font-weight: bold;
       padding-top: 7px;
       padding-bottom: 7px;
       text-align: center;
+
+      &:hover {
+        background-color: @blue-hover;
+      }
+
+      &:active {
+        background-color: @blue-hover;
+        color: @blue-text;
+      }
     }
 
   }
@@ -50,27 +60,53 @@
     z-index: 8;
     text-align: center;
 
-      &__item {
-        display: inline-block;
-        vertical-align: top;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        background-color: #fff;
-        border: none;
-        width: 20%;
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      border: none;
+      width: 20%;
 
-        a {
-          display: inline;
+      a {
+        display: inline;
+        background-color: #fff;
+        color: #000;
+        font-size: @font-size-base;
+        line-height: 26px;
+        padding: 0;
+
+        &:hover {
+          background-color: #fff;
+          color: @blue;
+        }
+
+        &:active {
+          background-color: #fff;
           color: #000;
-          font-size: @font-size-base;
-          line-height: 26px;
-          padding: 0;
+          opacity: 0.3;
         }
       }
 
-      &__close {
-        display: none;
+      &--active {
+        a {
+          color: @brown;
+
+          &:hover {
+            color: @brown-active;
+          }
+
+          &:active {
+            color: @brown;
+            opacity: 0.2;
+          }
+        }
       }
+    }
+
+    &__close {
+      display: none;
+    }
   }
 }
 

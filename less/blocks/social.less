@@ -11,38 +11,52 @@
       margin-right: 6px;
       background-color: @blue;
 
-        &:last-child {
-          margin-right: 0;
-        }
+      &:last-child {
+        margin-right: 0;
+      }
 
-        &--tw {
-          svg {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            fill: #fff;
-          }
+      &--tw {
+        svg {
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          fill: #fff;
         }
+      }
 
-        &--fb {
-          svg {
-            position: absolute;
-            top: 13px;
-            left: 19px;
-            fill: #fff;
-          }
+      &--fb {
+        svg {
+          position: absolute;
+          top: 13px;
+          left: 19px;
+          fill: #fff;
         }
+      }
 
-        &--yt {
-          svg {
-            position: absolute;
-            top: 16px;
-            left: 13px;
-            fill: #fff;
-          }
+      &--yt {
+        svg {
+          position: absolute;
+          top: 16px;
+          left: 13px;
+          fill: #fff;
         }
+      }
+
+      &:hover {
+        background-color: @blue-hover;
+      }
+
+      &:active {
+        background-color: @blue-active;
+
+        svg {
+          fill: @blue-text;
+        }
+      }
     }
 }
+
+/* tablet-layout */
 
 @media(min-width: @screen_md) {
   .social {

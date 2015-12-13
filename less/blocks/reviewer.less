@@ -54,6 +54,18 @@
       font-family: "PT Sans", "Arial", sans-serif;
       border: none;
       outline: none;
+
+      &:hover {
+        background-color: @gray-form-border;
+      }
+
+      &:focus {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        background-color: #fff;
+        border: 2px solid @gray-form-border;
+      }
     }
 }
 

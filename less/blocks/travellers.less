@@ -51,12 +51,36 @@
       border: none;
       outline: none;
 
-        &--count {
-          width: 83px;
-          margin: 0;
+      &:hover {
+        background-color: @gray-form-border;
+      }
+
+      &:focus {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        background-color: #fff;
+        border: 2px solid @gray-form-border;
+      }
+
+      &--count {
+        width: 83px;
+        margin: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &:hover {
+          background-color: @gray-form;
+        }
+
+        &:focus {
           padding-top: 16px;
           padding-bottom: 16px;
+          padding-left: 22px;
+          background-color: @gray-form;
+          border: none;
         }
+      }
     }
 
     &__counter {
@@ -79,6 +103,22 @@
       width: 61px;
       height: 58px;
       cursor: pointer;
+
+      &:hover {
+        background-color: @gray-form-border;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        background-color: @gray-btn-active;
+
+        &::before {
+          opacity: .3;
+        }
+      }
     }
 
     &__plus-btn {
@@ -93,6 +133,7 @@
         width: 20px;
         height: 20px;
         background: url("../img/spritesheet.png") no-repeat -79px -3px;
+        opacity: .6;
 
       }
     }
@@ -111,7 +152,7 @@
         height: 4px;
         border-radius: 1px;
         background-color: @gray-minus;
-
+        opacity: .6;
       }
     }
 
@@ -254,6 +295,10 @@
         padding-left: 0;
         padding-right: 0;
         text-align: center;
+
+        &:focus {
+          padding-left: 0;
+        }
       }
     }
 
@@ -296,8 +341,6 @@
     }
 
     &__row {
-      //width: 280px;
-
       &--counter {
         margin: 0;
       }
@@ -333,6 +376,10 @@
       &--count {
         width: 54px;
         padding-left: 10px;
+
+        &:focus {
+          padding-left: 10px;
+        }
       }
 
       &--short {
