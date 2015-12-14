@@ -1,12 +1,27 @@
-function initialize() {
-  var Center = {lat: 35.0349013, lng: -111.679886};
+(function(){
+
+  if (!("FormData" in window)) {
+    return;
+  }
+
+  var form = document.querySelector(".review");
+
+
+
+
+
+
+
+
+  function initialize() {
+    var Center = {lat: 35.0349013, lng: -111.679886};
 
     var mapOptions = {
-        zoom: 7,
-        center: Center,
-        scrollwheel: false,
-    disableDefaultUI: true
-  }
+      zoom: 7,
+      center: Center,
+      scrollwheel: false,
+      disableDefaultUI: true
+    }
     var map = new  google.maps.Map(
         document.querySelector(".map"),
         mapOptions
@@ -19,5 +34,8 @@ function initialize() {
         map: map,
         icon: image
     });
-}
-google.maps.event.addDomListener(window, "load", initialize);
+  }
+  google.maps.event.addDomListener(window, "load", initialize);
+
+
+})();

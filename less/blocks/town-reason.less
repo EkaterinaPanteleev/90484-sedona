@@ -31,8 +31,15 @@
   .town-reason {
 
     &__item-img {
+      width: 800px;
+      height: 256px;
+      overflow: hidden;
+
       img {
-        width: 800px;
+        position: relative;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
