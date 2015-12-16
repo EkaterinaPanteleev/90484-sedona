@@ -1,76 +1,83 @@
 .checkbox-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 
-    &__wrap {
-      margin-bottom: 55px;
+  &__wrap {
+    margin-bottom: 55px;
+  }
+
+  &__col {
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    &__col:last-child {
+    &:last-child {
+
       li:last-child {
         margin-bottom: 30px;
       }
     }
+  }
 
-    &__item {
-      display: none;
-    }
+  &__item {
+    display: none;
+  }
 
-    &__label {
-      position: relative;
-      margin-left: 79px;
-      font-size: @font-size-base+4;
-      line-height: 26px;
-      color: #000;
-      text-transform: none;
-      font-weight: bold;
-      cursor: pointer;
+  &__label {
+    position: relative;
+    margin-left: 79px;
+    font-size: @font-size-base+4;
+    line-height: 26px;
+    color: #000;
+    text-transform: none;
+    font-weight: bold;
+    cursor: pointer;
 
-      &:hover {
-
-        &::before {
-          background-color: @gray-form-border;
-        }
-      }
-
-      &:active {
-
-        &::before {
-          background-color: @gray-btn-active;
-        }
-
-        &::after {
-          opacity: 0.2;
-        }
-      }
+    &:hover {
 
       &::before {
-        content: "";
-        position: absolute;
-        top: -13px;
-        left: -80px;
-        width: 56px;
-        height: 56px;
-        border-radius: 3px;
-        background-color: @gray-form;
+        background-color: @gray-form-border;
+      }
+    }
+
+    &:active {
+
+      &::before {
+        background-color: @gray-btn-active;
       }
 
       &::after {
-        content: "";
-        display: none;
-        position: absolute;
-        top: 4px;
-        left: -62.5px;
-        width: 25px;
-        height: 19px;
-        background: url("../img/spritesheet.png") no-repeat -105px -3px;
+        opacity: 0.2;
       }
     }
 
-    &__item:checked+label::after {
-      display: block;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -13px;
+      left: -80px;
+      width: 56px;
+      height: 56px;
+      border-radius: 3px;
+      background-color: @gray-form;
     }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      top: 4px;
+      left: -62.5px;
+      width: 25px;
+      height: 19px;
+      background: url("../img/spritesheet.png") no-repeat -105px -3px;
+    }
+  }
+
+  &__item:checked+label::after {
+    display: block;
+  }
 }
 
 /* tablet-layout */
@@ -82,12 +89,15 @@
     padding-right: 97px;
 
     &__col {
-      display: flex;
-      flex-direction: column;
       width: 50%;
 
       &:first-child {
         margin-right: 55px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
       }
     }
 
@@ -108,13 +118,16 @@
     padding: 0;
 
     &__col {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
       margin: 0;
 
       &:first-child {
         margin-right: 80px;
+      }
+
+      ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
     }
 
