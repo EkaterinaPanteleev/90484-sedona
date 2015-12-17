@@ -10,6 +10,7 @@ var minify = require("gulp-minify-css");
 var rename = require("gulp-rename");
 var clean = require("gulp-clean");
 var imagemin = require("gulp-imagemin");
+var jsmin = require("gulp-jsmin");
 
 
 gulp.task("style", function() {
@@ -22,7 +23,7 @@ gulp.task("style", function() {
     .pipe(gulp.dest("/css"));
 });
 
-gulp.task("build", function() {
+gulp.task("compile", function() {
     gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(less())
@@ -59,6 +60,12 @@ gulp.task("compress", function() {
   .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("jsmin", function () {
+  gulp.src("source/js/**/*.js")
+    .pipe(jsmin())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest("build/js"));
+});
 
 
 // Оставьте эту строку в самом конце файла
