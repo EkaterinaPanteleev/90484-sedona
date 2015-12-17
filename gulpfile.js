@@ -67,7 +67,5 @@ gulp.task("jsmin", function () {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task('default', ['concat', 'uglify']);
-
 // Оставьте эту строку в самом конце файла
 require("./.gosha");
