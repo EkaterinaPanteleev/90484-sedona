@@ -20,7 +20,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer({browsers: "last 2 versions"})
     ]))
-    .pipe(gulp.dest("/css"));
+    .pipe(gulp.dest("source/css"));
 });
 
 gulp.task("compile", function() {
@@ -67,6 +67,7 @@ gulp.task("jsmin", function () {
     .pipe(gulp.dest("build/js"));
 });
 
+gulp.task('default', ['concat', 'uglify']);
 
 // Оставьте эту строку в самом конце файла
 require("./.gosha");
