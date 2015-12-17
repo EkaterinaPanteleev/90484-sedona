@@ -1,0 +1,195 @@
+.welcome {
+
+  &__img {
+    position: relative;
+    width: 320px;
+    padding-top: 393px;
+    background: @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 60% 20%;
+
+      &::after {
+        content: "";
+        width: 1202px;
+        height: 57px;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/intro-triangle.svg");
+      }
+
+      &--welcome-text {
+        position: absolute;
+        top: 50px;
+        left: 88px;
+        fill: @blue;
+      }
+
+      &--gorgeous-text {
+        position: absolute;
+        top: 95px;
+        left: 61px;
+        fill: @brown;
+      }
+
+      &--sedona-text {
+        position: absolute;
+        top: 177px;
+        left: 18px;
+        fill: #fff;
+      }
+
+      &--because-text {
+        position: absolute;
+        top: 290px;
+        left: 60px;
+        fill: #fff;
+      }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    &__img {
+      background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 60% 25%;
+      background-size: cover;
+    }
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+  }
+
+  &__title {
+    width: 257px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    font-size: @font-size-h1;
+    line-height: 26px;
+    color: #000;
+    font-weight: bold;
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    font-size: @font-size-base;
+    line-height: 26px;
+    color: @gray-dark;
+  }
+}
+
+/* table-layout */
+
+@media(min-width: @screen_md) {
+  .welcome {
+    &__img {
+      width: 768px;
+      padding-top: 513px;
+      background-position: 70% 27%;
+
+      &::after {
+        width: 770px;
+        height: 36px;
+        left: 0;
+        transform: none;
+        background-size: cover;
+      }
+
+      &--welcome-text {
+        width: 190px;
+        height: 46px;
+        top: 75px;
+        left: 290px;
+      }
+
+      &--gorgeous-text {
+        width: 256px;
+        height: 27px;
+        top: 133px;
+        left: 255px;
+      }
+
+      &--sedona-text {
+        width: 457px;
+        height: 80px;
+        top: 215px;
+        left: 158px;
+      }
+
+      &--because-text {
+        width: 298px;
+        height: 80px;
+        top: 350px;
+        left: 230px;
+      }
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      &__img {
+        background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 65% 35%;
+      }
+    }
+
+    &__wrap {
+      padding-top: 55px;
+      padding-bottom: 50px;
+    }
+
+    &__title {
+      width: 443px;
+      margin: 0 auto;
+      margin-bottom: 28px;
+      font-size: @font-size-h1+3;
+    }
+  }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .welcome {
+
+    &__img {
+      width: 1200px;
+      padding-top: 513px;
+      background-position: 70% 27%;
+
+      &::after {
+        width: 1200px;
+        height: 57px;
+        left: 0;
+        transform: none;
+        background-size: cover;
+      }
+
+      &--welcome-text {
+        left: 505px;
+      }
+
+      &--gorgeous-text {
+        left: 470px;
+      }
+
+      &--sedona-text {
+        left: 373px;
+      }
+
+      &--because-text {
+        left: 445px;
+      }
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      &__img {
+        background: @welcome-bg url("../img/photo-background@2x.jpg") no-repeat 65% 30%;
+      }
+    }
+  }
+
+}

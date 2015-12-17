@@ -1,0 +1,170 @@
+.reason-features {
+  padding-right: 20px;
+  padding-top: 35px;
+  margin-bottom: 37px;
+
+    &__home {
+      position: relative;
+      margin-bottom: 28px;
+      padding-left: 70px;
+    }
+
+    &__home-img {
+      position: absolute;
+      left: 21px;
+      top: -11px;
+      fill: @blue;
+    }
+
+    &__food {
+      position: relative;
+      margin-bottom: 28px;
+      padding-left: 70px;
+    }
+
+    &__food-img {
+      position: absolute;
+      left: 20px;
+      top: -8px;
+      fill: @blue;
+    }
+
+    &__gift {
+      position: relative;
+      padding-left: 70px;
+    }
+
+    &__gift-img {
+      position: absolute;
+      left: 20px;
+      top: -8px;
+      fill: @blue;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: @font-size-title;
+      line-height: 26px;
+      color: #000;
+      font-weight: bold;
+    }
+}
+
+/* tablet-layout */
+
+@media(min-width: @screen_md) {
+  .reason-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 0;
+    margin-bottom: 60px;
+
+    &__home,
+    &__food,
+    &__gift {
+      margin: 0;
+      padding: 0;
+      width: 33%;
+      text-align: center;
+      padding-top: 125px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: @font-size-title+3;
+      line-height: 26px;
+    }
+
+    &__gift {
+      p {
+        width: 166px;
+        margin: 0 auto;
+      }
+    }
+
+    &__text {
+      margin: 0 auto;
+      width: 158px;
+    }
+
+    &__home-img {
+      top: 26px;
+      left: 90px;
+
+      svg {
+        width: 75px;
+        height: 70px;
+      }
+    }
+
+    &__food-img {
+      top: 26px;
+      left: 87px;
+
+      svg {
+        width: 75px;
+        height: 70px;
+      }
+    }
+
+    &__gift-img {
+      top: 22px;
+      left: 88px;
+
+      svg {
+        width: 65px;
+        height: 76px;
+      }
+    }
+  }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .reason-features {
+    margin-bottom: 82px;
+
+    &__home-img {
+      left: 160px;
+    }
+
+    &__food-img {
+      left: 160px;
+    }
+
+    &__gift-img {
+      left: 160px;
+    }
+
+    &__text {
+      margin: 0;
+      width: auto;
+    }
+
+    &__home {
+      p {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+    }
+
+    &__food {
+      p {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+
+    &__gift {
+      p {
+        width: auto;
+        margin: 0;
+        padding-left: 75px;
+        padding-right: 75px;
+      }
+    }
+
+  }
+}

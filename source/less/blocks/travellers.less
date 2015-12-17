@@ -1,0 +1,395 @@
+.travellers {
+  border-bottom: 1px solid @gray-form-border;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+    &__title {
+      margin-bottom: 23px;
+      margin-left: 15px;
+      padding-top: 0;
+      font-size: @font-size-title;
+      line-height: 26px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    &__label {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 22px;
+      margin-bottom: 8px;
+      line-height: 26px;
+      font-size: @font-size-base;
+      cursor: pointer;
+
+      &--required {
+
+        &::after {
+          content: "*";
+          color: @red;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    &__field {
+      box-sizing: border-box;
+      width: 100%;
+      margin-bottom: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 22px;
+      padding-right: 20px;
+      background-color: @gray-form;
+      color: #000;
+      font-weight: bold;
+      text-transform: none;
+      font-size: @font-size-input;
+      line-height: 26px;
+      font-family: "PT Sans", "Arial", sans-serif;
+      border: none;
+      outline: none;
+
+      &:hover {
+        background-color: @gray-form-border;
+      }
+
+      &:focus {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 20px;
+        background-color: #fff;
+        border: 2px solid @gray-form-border;
+      }
+
+      &--count {
+        width: 83px;
+        margin: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &:hover {
+          background-color: @gray-form;
+        }
+
+        &:focus {
+          padding-top: 16px;
+          padding-bottom: 16px;
+          padding-left: 22px;
+          background-color: @gray-form;
+          border: none;
+        }
+      }
+    }
+
+    &__counter {
+      margin-bottom: 38px;
+    }
+
+    &__row {
+      .clearfix;
+      font-size: 0;
+    }
+
+    &__minus-btn,
+    &__plus-btn {
+      display: inline-block;
+      vertical-align: top;
+      border: none;
+      outline: none;
+      padding: 0;
+      background-color: @gray-form;
+      width: 61px;
+      height: 58px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: @gray-form-border;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        background-color: @gray-btn-active;
+
+        &::before {
+          opacity: .3;
+        }
+      }
+    }
+
+    &__plus-btn {
+      position: relative;
+      font-size: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        background: url("../img/spritesheet.png") no-repeat -79px -3px;
+        opacity: .6;
+
+      }
+    }
+
+    &__minus-btn {
+      margin-right: 7px;
+      position: relative;
+      font-size: 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: 21px;
+        width: 20px;
+        height: 4px;
+        border-radius: 1px;
+        background-color: @gray-minus;
+        opacity: .6;
+      }
+    }
+
+    &__counter-wrap {
+      width: 145px;
+      margin-right: 6px;
+      display: inline-block;
+      vertical-align: top;
+      background-color: @gray-form;
+
+        span {
+          font-size: 18px;
+          text-transform: none;
+          color: #000;
+          opacity: 0.4;
+          margin-left: 11px;
+        }
+    }
+
+    &__item {
+      .clearfix;
+      margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+    }
+
+    &__number-wrap {
+      float: left;
+      width: 61px;
+    }
+
+    &__number {
+      display: block;
+      padding-top: 3px;
+      width: 61px;
+      margin-bottom: 10px;
+      font-size: @font-size-base;
+      text-align: center;
+    }
+
+    &__number-box {
+      display: block;
+      width: 61px;
+      padding-top: 18px;
+      padding-bottom: 19px;
+      font-size: @font-size-base+4;
+      color: #000;
+      font-weight: bold;
+      background-color: @gray-form;
+      text-align: center;
+    }
+
+    &__label {
+      font-size: @font-size-base;
+    }
+
+    &__wrap {
+      float: right;
+      width: 213px;
+    }
+}
+
+/* tablet-layout */
+
+@media(min-width: @screen_md) {
+  .travellers {
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+
+    &__wrap-title {
+      text-align: center;
+      margin-bottom: 23px;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: -13px;
+        display: block;
+        border-bottom: 1px solid @gray-form-hr;
+      }
+    }
+
+    &__title {
+      position: relative;
+      margin: 0;
+      display: inline;
+      text-align: center ;
+      padding-left: 55px;
+      padding-right: 55px;
+      font-size: @font-size-title+3;
+      line-height: 26px;
+      background-color: #fff;
+      z-index: 2;
+    }
+
+    &__wrap-fields {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__counter {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      label {
+        margin-left: 0;
+        margin: auto;
+        margin-bottom: 5px;
+      }
+    }
+
+    &__counter-wrap {
+      margin: auto;
+      width: 54px;
+
+      span {
+        display: none;
+      }
+    }
+
+    &__minus-btn {
+      width: 61px;
+      margin: 0;
+    }
+
+    &__plus-btn {
+      width: 61px;
+      margin: 0;
+    }
+
+    &__field {
+      width: 190px;
+
+      &--count {
+        width: 54px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+
+        &:focus {
+          padding-left: 0;
+        }
+      }
+    }
+
+    &__item {
+      display: flex;
+
+    }
+
+    &__row {
+      display: flex;
+
+      &--counter {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    &__wrap {
+      width: 190px;
+      margin-right: 6px;
+    }
+
+    &__number-wrap {
+      margin-right: 6px;
+    }
+  }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .travellers {
+    &__counter {
+
+      label {
+        margin: 0;
+        margin-left: 22px;
+        margin-bottom: 7px;
+      }
+    }
+
+    &__row {
+      &--counter {
+        margin: 0;
+      }
+    }
+
+    &__counter-wrap {
+    width: 145px;
+    margin-right: 6px;
+
+      span {
+        display: inline;
+        margin-left: 37px;
+      }
+    }
+
+    &__minus-btn {
+      margin-right: 6px;
+    }
+
+    &__wrap {
+      width: auto;
+      margin: 0;
+      margin-right: 60px;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+
+    &__field {
+      width: 280px;
+
+      &--count {
+        width: 54px;
+        padding-left: 10px;
+
+        &:focus {
+          padding-left: 10px;
+        }
+      }
+
+      &--short {
+        width: 212px;
+      }
+    }
+
+
+
+
+
+  }
+}

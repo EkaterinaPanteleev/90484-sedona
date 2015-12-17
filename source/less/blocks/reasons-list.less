@@ -1,0 +1,26 @@
+.reasons-list {
+  &__wrap {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: @gray;
+  }
+
+}
+
+/* tablet-layout */
+
+@media(min-width: @screen_md) {
+  .reasons-list {
+
+    &__wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+  }
+}
+
+

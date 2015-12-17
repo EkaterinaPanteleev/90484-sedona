@@ -1,0 +1,47 @@
+.town-reason {
+  &__item-img {
+    img {
+      width: 320px;
+      height: 256px;
+    }
+  }
+}
+
+/* tablet-layout */
+
+@media(min-width: @screen_md) {
+  .town-reason {
+    &__item {
+      display: flex;
+    }
+
+    &__item-img {
+      height: 256px;
+
+      img {
+        width: 512px;
+      }
+    }
+  }
+}
+
+/* desktop-layout */
+
+@media(min-width: @screen_lg) {
+  .town-reason {
+
+    &__item-img {
+      width: 800px;
+      height: 256px;
+      overflow: hidden;
+
+      img {
+        position: relative;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
