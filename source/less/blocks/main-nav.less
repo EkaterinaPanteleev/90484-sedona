@@ -1,5 +1,6 @@
 
 .main-nav {
+  display: none;
   position: relative;
 
 
@@ -52,8 +53,13 @@
 
 }
 
+.main-nav--show {
+  display: block;
+}
+
 @media(min-width: @screen_md) {
   .main-nav {
+    display: block;
     position: absolute;
     width: 100%;
     font-size: 0;

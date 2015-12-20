@@ -61,21 +61,6 @@
         background-color: #fff;
         border: 2px solid @gray-form-border;
       }
-
-      &--count {
-        width: 83px;
-        margin: 0;
-
-        &:hover {
-          background-color: @gray-form;
-        }
-
-        &:focus {
-          padding-left: 22px;
-          background-color: @gray-form;
-          border: none;
-        }
-      }
     }
 
     &__counter {
@@ -87,93 +72,13 @@
       font-size: 0;
     }
 
-    &__minus-btn,
-    &__plus-btn {
-      display: inline-block;
-      vertical-align: top;
-      border: none;
-      outline: none;
-      padding: 0;
-      background-color: @gray-form;
-      width: 61px;
-      height: 58px;
-      cursor: pointer;
-
-      &:hover {
-        background-color: @gray-form-border;
-
-        &::before {
-          opacity: 1;
-        }
-      }
-
-      &:active {
-        background-color: @gray-btn-active;
-
-        &::before {
-          opacity: .3;
-        }
-      }
-    }
-
-    &__plus-btn {
-      position: relative;
-      font-size: 0;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        width: 20px;
-        height: 20px;
-        background: url("../img/spritesheet.png") no-repeat -79px -3px;
-        opacity: .6;
-
-      }
-    }
-
-    &__minus-btn {
-      margin-right: 7px;
-      position: relative;
-      font-size: 0;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 28px;
-        left: 21px;
-        width: 20px;
-        height: 4px;
-        border-radius: 1px;
-        background-color: @gray-minus;
-        opacity: .6;
-      }
-    }
-
-    &__counter-wrap {
-      width: 145px;
-      margin-right: 6px;
-      display: inline-block;
-      vertical-align: top;
-      background-color: @gray-form;
-
-        span {
-          font-size: 18px;
-          text-transform: none;
-          color: #000;
-          opacity: 0.4;
-          margin-left: 11px;
-        }
-    }
-
     &__item {
       .clearfix;
       margin-bottom: 15px;
 
-        &:last-child {
-          margin-bottom: 0;
-        }
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     &__number-wrap {
@@ -263,38 +168,8 @@
       }
     }
 
-    &__counter-wrap {
-      margin: auto;
-      width: 54px;
-
-      span {
-        display: none;
-      }
-    }
-
-    &__minus-btn {
-      width: 61px;
-      margin: 0;
-    }
-
-    &__plus-btn {
-      width: 61px;
-      margin: 0;
-    }
-
     &__field {
       width: 190px;
-
-      &--count {
-        width: 54px;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-
-        &:focus {
-          padding-left: 0;
-        }
-      }
     }
 
     &__item {
@@ -304,11 +179,6 @@
 
     &__row {
       display: flex;
-
-      &--counter {
-        display: block;
-        margin: auto;
-      }
     }
 
     &__wrap {
@@ -335,26 +205,6 @@
       }
     }
 
-    &__row {
-      &--counter {
-        margin: 0;
-      }
-    }
-
-    &__counter-wrap {
-    width: 145px;
-    margin-right: 6px;
-
-      span {
-        display: inline;
-        margin-left: 37px;
-      }
-    }
-
-    &__minus-btn {
-      margin-right: 6px;
-    }
-
     &__wrap {
       width: auto;
       margin: 0;
@@ -368,17 +218,6 @@
     &__field {
       display: block;
       width: 280px;
-
-      &--count {
-        display: inline-block;
-        vertical-align: baseline;
-        width: 54px;
-        padding-left: 10px;
-
-        &:focus {
-          padding-left: 10px;
-        }
-      }
 
       &--short {
         width: 212px;

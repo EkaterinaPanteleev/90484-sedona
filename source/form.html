@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sedona-form</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet'>
   <link href="css/style.css" rel="stylesheet">
@@ -128,12 +128,12 @@
 
               <div class="period__counter">
                 <label class="period__label  period__label--required" for="days-quantity">Дней прибывания:</label>
-                <div class="period__row">
-                  <button type="button" class="period__minus-btn">-</button>
-                  <div class="period__counter-wrap">
-                    <input type="text" name="days-quantity" id="days-quantity" value="14" class="period__field period__field--days" required><span>дн.</span>
+                <div class="input-numeric">
+                  <button type="button" class="input-numeric__minus-btn">-</button>
+                  <div class="input-numeric__wrap">
+                    <input type="text" name="days-quantity" id="days-quantity" value="14" class="input-numeric__field" required><span>дн.</span>
                   </div>
-                  <button type="button" class="period__plus-btn">+</button>
+                  <button type="button" class="input-numeric__plus-btn">+</button>
                 </div>
               </div>
 
@@ -155,12 +155,12 @@
           <!--Travellers quantity-->
               <div class="travellers__counter">
                 <label class="travellers__label  travellers__label--required" for="travellers-quantity">Количество путешественников:</label>
-                <div class="travellers__row travellers__row--counter">
-                  <button type="button" class="travellers__minus-btn">-</button>
-                  <div class="travellers__counter-wrap">
-                    <input type="text" name="travellers-quantity" id="travellers-quantity" value="2" class="travellers__field  travellers__field--count" required><span>чел.</span>
+                <div class="input-numeric">
+                  <button type="button" class="input-numeric__minus-btn">-</button>
+                  <div class="input-numeric__wrap">
+                    <input type="text" name="travellers-quantity" id="travellers-quantity" value="2" class="input-numeric__field" required><span>чел.</span>
                   </div>
-                  <button type="button" class="travellers__plus-btn">+</button>
+                  <button type="button" class="input-numeric__plus-btn">+</button>
                 </div>
               </div>
             <!---->
@@ -367,6 +367,7 @@
     </div>
   </div>
   <!---->
+  <script src="js/vendors/tapjs/dist/tap.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

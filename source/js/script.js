@@ -1,17 +1,83 @@
 (function(){
 
+  /*ajax*/
+
   if (!("FormData" in window)) {
     return;
   }
 
   var form = document.querySelector(".review");
 
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    var data = new FormData(form);
+    request(data, function(response) {
+      console.log(response);
+    });
+  });
+
+  function request(data, fn) {
+
+    var xhr = new XMLHttpRequest();
+    var time = (new Date()).getTime();
+
+    xhr.open("post", "https://echo.htmlacademy.ru/adaptive?" + time);
+    xhr.addEventListener("readystatechange", function() {
+      if (xhr.readyState == 4) {
+        fn(xhr.responseText);
+      }
+    });
+
+    xhr.send(data);
+  }
 
 
+  /*+/- field*/
 
+  var numeric = document.querySelectorAll(".input-numeric");
 
+  for (var i = 0; i < numeric.length; i++) {
+    initNumberField(numeric[i]);
+  }
 
+  function initNumberField(parent) {
 
+    var input = parent.querySelector("input");
+    var minus = parent.querySelector(".input-numeric__minus-btn");
+    var plus = parent.querySelector(".input-numeric__plus-btn");
+
+    minus.addEventListener("tap", function() {changeNumber(false);});
+    plus.addEventListener("tap", function() {changeNumber(true);});
+
+    function changeNumber(operation) {
+      var value = Number(input.value);
+
+      if (isNaN(value)) {
+        value = 0;
+      }
+
+      if (operation) {
+      input.value = value + 1;
+      } else {
+      input.value = value - 1;
+      }
+    }
+  }
+  /*menu*/
+
+  var openMenu = document.querySelector(".page-header__open-nav");
+  var nav = document.querySelector(".main-nav");
+  var closeMenu = document.querySelector(".main-nav__close");
+
+  openMenu.addEventListener("tap", function() {
+    nav.classList.toggle("main-nav--show");
+  })
+
+  closeMenu.addEventListener("tap", function() {
+    nav.classList.remove("main-nav--show");
+  })
+
+/*map*/
 
   function initialize() {
     var Center = {lat: 35.0349013, lng: -111.679886};
@@ -35,7 +101,10 @@
         icon: image
     });
   }
-  google.maps.event.addDomListener(window, "load", initialize);
+  if (typeof google !== 'undefined') {
+    google.maps.event.addDomListener(window, "load", initialize);
+  }
 
 
 })();
+
