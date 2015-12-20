@@ -72,7 +72,7 @@ gulp.task("jsmin", function () {
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("build", ["clean", "compile", "copy", "compress", "jsmin"]);
+gulp.task("build", ["compile", "copy", "compress", "jsmin"]);
 
 
 // Оставьте эту строку в самом конце файла

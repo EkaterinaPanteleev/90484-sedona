@@ -8,6 +8,7 @@
 
   var form = document.querySelector(".review");
 
+  if (form)
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     var data = new FormData(form);
