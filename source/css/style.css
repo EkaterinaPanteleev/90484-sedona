@@ -754,7 +754,8 @@ legend {
   }
   .town-reason__item-img img {
     position: relative;
-    width: 100%;
+    width: 800px;
+    height: 400px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -817,7 +818,9 @@ legend {
 /* desktop-layout */
 @media (min-width: 1200px) {
   .town-desc {
-    width: 380px;
+    width: 307px;
+    padding-left: 48px;
+    padding-right: 45px;
     padding-top: 52px;
   }
   .town-desc__title {
@@ -831,8 +834,8 @@ legend {
     margin: 0;
     width: auto;
     padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .reason-features {
@@ -1658,7 +1661,7 @@ legend {
   }
 }
 .review-header {
-  padding-top: 60px;
+  padding-top: 65px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -1679,6 +1682,7 @@ legend {
 @media (min-width: 768px) {
   .review-header {
     border: none;
+    padding-top: 60px;
     margin-bottom: 55px;
   }
   .review-header__wrap {
@@ -1731,7 +1735,7 @@ legend {
 .reviewer__title {
   margin-bottom: 26px;
   margin-left: 8px;
-  padding-top: 8px;
+  padding-top: 5px;
   font-size: 18px;
   line-height: 26px;
   color: #000;
@@ -1758,8 +1762,7 @@ legend {
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 15px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  height: 58px;
   padding-left: 22px;
   padding-right: 20px;
   background-color: #f2f2f2;
@@ -1807,6 +1810,7 @@ legend {
     text-align: center ;
     padding-left: 47px;
     padding-right: 47px;
+    padding-top: 8px;
     font-size: 21px;
     line-height: 26px;
     background-color: #fff;
@@ -1818,6 +1822,7 @@ legend {
     display: flex;
   }
   .reviewer__field {
+    display: block;
     width: 176px;
   }
   .reviewer__wrap {
@@ -1993,9 +1998,8 @@ legend {
 .period__field {
   box-sizing: border-box;
   width: 100%;
+  height: 58px;
   margin-bottom: 14px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   padding-left: 22px;
   padding-right: 20px;
   background-color: #f2f2f2;
@@ -2021,8 +2025,6 @@ legend {
 .period__field--days {
   width: 83px;
   margin: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 .period__field--days:hover {
   background-color: #f2f2f2;
@@ -2036,8 +2038,6 @@ legend {
 }
 .period__field--border {
   border: 2px solid #8c8c8c;
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 .period__field--border:focus {
   padding-left: 22px;
@@ -2219,7 +2219,7 @@ legend {
   padding-right: 20px;
 }
 .travellers__title {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   margin-left: 15px;
   padding-top: 0;
   font-size: 18px;
@@ -2244,9 +2244,8 @@ legend {
 .travellers__field {
   box-sizing: border-box;
   width: 100%;
+  height: 58px;
   margin-bottom: 14px;
-  padding-top: 16px;
-  padding-bottom: 16px;
   padding-left: 22px;
   padding-right: 20px;
   background-color: #f2f2f2;
@@ -2272,15 +2271,11 @@ legend {
 .travellers__field--count {
   width: 83px;
   margin: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 .travellers__field--count:hover {
   background-color: #f2f2f2;
 }
 .travellers__field--count:focus {
-  padding-top: 16px;
-  padding-bottom: 16px;
   padding-left: 22px;
   background-color: #f2f2f2;
   border: none;
@@ -2540,9 +2535,12 @@ legend {
     margin-right: 0;
   }
   .travellers__field {
+    display: block;
     width: 280px;
   }
   .travellers__field--count {
+    display: inline-block;
+    vertical-align: baseline;
     width: 54px;
     padding-left: 10px;
   }
@@ -2602,12 +2600,7 @@ legend {
 .checkbox-list__wrap {
   margin-bottom: 55px;
 }
-.checkbox-list__col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.checkbox-list__col:last-child li:last-child {
+.checkbox-list__col:last-child .checkbox-list__wrap:last-child {
   margin-bottom: 30px;
 }
 .checkbox-list__item {
@@ -2615,6 +2608,8 @@ legend {
 }
 .checkbox-list__label {
   position: relative;
+  display: inline-block;
+  vertical-align: top;
   margin-left: 79px;
   font-size: 18px;
   line-height: 26px;
@@ -2665,18 +2660,17 @@ legend {
     padding-right: 97px;
   }
   .checkbox-list__col {
+    box-sizing: border-box;
     width: 50%;
-  }
-  .checkbox-list__col:first-child {
-    margin-right: 55px;
-  }
-  .checkbox-list__col ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .checkbox-list__col:first-child {
+    margin-right: 55px;
   }
   .checkbox-list__wrap {
     margin-bottom: 65px;
@@ -2691,24 +2685,22 @@ legend {
     padding: 0;
   }
   .checkbox-list__col {
-    margin: 0;
+    display: block;
+    width: auto;
   }
   .checkbox-list__col:first-child {
-    margin-right: 80px;
+    margin-right: 20px;
   }
-  .checkbox-list__col ul {
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .checkbox-list__wrap {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 65px;
   }
-  .checkbox-list__warp {
-    margin-bottom: 55px;
+  .checkbox-list__col:last-child .checkbox-list__wrap {
+    margin-right: 45px;
+  }
+  .checkbox-list__col:last-child .checkbox-list__wrap:last-child {
+    margin-right: 0;
   }
 }
 .photos {
@@ -2716,7 +2708,7 @@ legend {
   padding-right: 20px;
 }
 .photos__title {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   padding-top: 3px;
   font-size: 18px;
   line-height: 26px;

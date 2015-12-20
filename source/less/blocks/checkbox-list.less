@@ -6,15 +6,8 @@
 
   &__col {
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
     &:last-child {
-
-      li:last-child {
+      .checkbox-list__wrap:last-child {
         margin-bottom: 30px;
       }
     }
@@ -26,6 +19,8 @@
 
   &__label {
     position: relative;
+    display: inline-block;
+    vertical-align: top;
     margin-left: 79px;
     font-size: @font-size-base+4;
     line-height: 26px;
@@ -89,15 +84,13 @@
     padding-right: 97px;
 
     &__col {
+      box-sizing: border-box;
       width: 50%;
+      display: flex;
+      flex-direction: column;
 
       &:first-child {
         margin-right: 55px;
-      }
-
-      ul {
-        display: flex;
-        flex-direction: column;
       }
     }
 
@@ -113,26 +106,38 @@
 
 /*desktop-layout */
 
-@media(min-width: @screen_lg) {
+ @media(min-width: @screen_lg) {
   .checkbox-list {
     padding: 0;
 
     &__col {
-      margin: 0;
+      display: block;
+      width: auto;
 
       &:first-child {
-        margin-right: 80px;
-      }
-
-      ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        margin-right: 20px;
       }
     }
 
-    &__warp {
-      margin-bottom: 55px;
+    &__wrap {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 65px;
+    }
+
+    &__col:last-child {
+
+      .checkbox-list__wrap {
+        margin-right: 45px;
+      }
+
+      .checkbox-list__wrap:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
+
+
+
+

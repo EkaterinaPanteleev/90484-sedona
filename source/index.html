@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic' rel='stylesheet'>
     <link href="css/style.css" rel="stylesheet">
@@ -111,10 +111,16 @@
               <div class="town-reason__item-img">
                 <picture>
                 <!--mobile-->
+                <source
+                    media="(min-width: 1200px)"
+                    srcset="img/photo-city@2x.jpg 1x">
+
                   <source
                     media="(min-width: 320px)"
                     srcset="img/photo-city@2x.jpg 2x,
                             img/photo-city@1x.jpg 1x">
+
+
 
                   <img src="img/photo-city@1x.jpg" width="320" height="257" alt="TOWN">
                 </picture>
