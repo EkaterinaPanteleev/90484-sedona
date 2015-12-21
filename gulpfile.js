@@ -68,7 +68,7 @@ gulp.task("compress", function() {
 });
 
 gulp.task("jsconcat", function() {
-  return gulp.src(["source/js/*.js", "source/js/vendors/tapjs/dist/tap.js"])
+  return gulp.src(["source/js/*.js", "source/js/vendors/*.js"])
     .pipe(concat("script.js"))
     .pipe(gulp.dest("build/js"));
 });
