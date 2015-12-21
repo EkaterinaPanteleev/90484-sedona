@@ -10,6 +10,8 @@ var rename = require("gulp-rename");
 var clean = require("gulp-clean");
 var imagemin = require("gulp-imagemin");
 var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
+var csscomb = require("gulp-csscomb");
 
 
 gulp.task("style", function() {
@@ -39,6 +41,7 @@ gulp.task("compile", function() {
     .pipe(postcss([
       autoprefixer({browsers: "last 2 versions"})
     ]))
+    .pipe(csscomb())
     .pipe(rename("style.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
@@ -48,7 +51,6 @@ gulp.task("compile", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-                    "source/js/**",
                     "source/index.html",
                     "source/form.html",
                     "source/post.html",
@@ -65,8 +67,14 @@ gulp.task("compress", function() {
   .pipe(gulp.dest("build/img"));
 });
 
+gulp.task("jsconcat", function() {
+  return gulp.src(["source/js/*.js", "source/js/vendors/tapjs/dist/tap.js"])
+    .pipe(concat("script.js"))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("jsmin", function () {
-  gulp.src("source/js/**/*.js")
+  gulp.src("build/js/**/*.js")
     .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"));

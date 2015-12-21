@@ -1,66 +1,73 @@
 .photo-list {
-  font-size: 0;
   margin-bottom: 15px;
 
-    &__wrap {
-      display: inline-block;
-      vertical-align: top;
-      position: relative;
-      margin-right: 35px;
-      margin-bottom: 35px;
-      line-height: 0;
+  font-size: 0;
 
-        &:nth-child(3n) {
-          margin-right: 0;
-        }
+  &__wrap {
+    position: relative;
 
-        img {
-          width: 70px;
-          height: 70px;
-        }
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 35px;
+
+    line-height: 0;
+    vertical-align: top;
+
+    &:nth-child(3n) {
+      margin-right: 0;
     }
 
-    &__file-name {
-      display: none;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  &__file-name {
+    display: none;
+  }
+
+  &__close {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    z-index: 10;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: @gray-form;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: @gray-form-border;
+
+      &::before {
+        opacity: 1;
+      }
     }
 
-    &__close {
+    &:active {
+      background-color: @gray-btn-active;
+
+      &::before {
+        opacity: 0.2;
+      }
+    }
+
+    &::before {
+      content: "";
       position: absolute;
-      top: -15px;
-      left: 20px;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: @gray-form;
-      z-index: 10;
+      top: 9px;
+      left: 9px;
 
-      &:hover {
-        background-color: @gray-form-border;
+      width: 12px;
+      height: 12px;
 
-        &::before {
-          opacity: 1;
-        }
-      }
-
-      &:active {
-        background-color: @gray-btn-active;
-
-        &::before {
-          opacity: .2;
-        }
-      }
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 9px;
-          left: 9px;
-          width: 12px;
-          height: 12px;
-          background: url("../img/spritesheet.png") no-repeat -32px -3px;
-          opacity: 0.6;
-        }
+      background: url("../img/spritesheet.png") no-repeat -32px -3px;
+      opacity: 0.6;
     }
+  }
 }
 
 /*tablet-layout */
@@ -74,15 +81,16 @@
       margin-right: 65px;
       margin-bottom: 28px;
 
-        img {
-          width: 140px;
-          height: 140px;
-          margin-bottom: 15px;
-        }
+      img {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 15px;
+      }
     }
 
     &__file-name {
       display: block;
+
       font-size: @font-size-base;
       line-height: 26px;
     }
@@ -90,14 +98,17 @@
     &__close {
       top: -30px;
       left: 110px;
+
       width: 60px;
       height: 60px;
 
       &::before {
         top: 19px;
         left: 19px;
+
         width: 23px;
         height: 23px;
+
         background: url("../img/spritesheet.png") no-repeat -50px -3px;
         opacity: 0.6;
       }

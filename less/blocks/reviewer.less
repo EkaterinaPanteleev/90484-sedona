@@ -1,106 +1,121 @@
 .reviewer {
-  border-bottom: 1px solid @gray-form-border;
+  padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
-  padding-right: 20px;
 
-    &__title {
-      margin-bottom: 26px;
-      margin-left: 8px;
-      padding-top: 8px;
-      font-size: @font-size-title;
-      line-height: 26px;
-      color: #000;
-      font-weight: bold;
-    }
+  border-bottom: 1px solid @gray-form-border;
 
-    &__wrap {
-      font-size: 0;
-    }
+  &__title {
+    margin-bottom: 26px;
+    margin-left: 8px;
+    padding-top: 8px;
 
-    &__label {
-      display: inline-block;
-      vertical-align: top;
-      margin-left: 21px;
-      margin-bottom: 6px;
-      font-size: @font-size-base;
-      line-height: 26px;
-      cursor: pointer;
+    font-weight: bold;
+    font-size: @font-size-title;
+    line-height: 26px;
+    color: #000000;
+  }
 
-      &--required {
+  &__wrap {
+    font-size: 0;
+  }
 
-        &::after {
-          content: "*";
-          color: @red;
-          margin-left: 4px;
-        }
+  &__label {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-left: 21px;
+
+    font-size: @font-size-base;
+    line-height: 26px;
+    vertical-align: top;
+
+    cursor: pointer;
+
+    &--required {
+      &::after {
+        content: "*";
+
+        margin-left: 4px;
+
+        color: @red;
       }
     }
+  }
 
-    &__field {
-      box-sizing: border-box;
-      width: 100%;
-      margin-bottom: 15px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      padding-left: 22px;
-      padding-right: 20px;
-      background-color: @gray-form;
-      color: #000;
-      font-weight: bold;
-      text-transform: none;
-      font-size: @font-size-input;
-      line-height: 26px;
-      font-family: "PT Sans", "Arial", sans-serif;
-      border: none;
-      outline: none;
+  &__field {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-bottom: 16px;
+    padding-left: 22px;
 
-      &:hover {
-        background-color: @gray-form-border;
-      }
+    font-weight: bold;
+    font-size: @font-size-input;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #000000;
+    text-transform: none;
 
-      &:focus {
-        padding-top: 14px;
-        padding-bottom: 14px;
-        padding-left: 20px;
-        background-color: #fff;
-        border: 2px solid @gray-form-border;
-      }
+    background-color: @gray-form;
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: @gray-form-border;
     }
+
+    &:focus {
+      padding-top: 14px;
+      padding-bottom: 14px;
+      padding-left: 20px;
+
+      background-color: #ffffff;
+      border: 2px solid @gray-form-border;
+    }
+  }
 }
 
 /* table-layout */
 
 @media(min-width: @screen_md) {
   .reviewer {
-    border: none;
-    padding: 0;
     margin-bottom: 50px;
+    padding: 0;
+
+    border: none;
 
     &__wrap-title {
-      text-align: center;
       margin-bottom: 25px;
+
+      text-align: center;
 
       &::after {
         content: "";
         position: relative;
         top: -13px;
+
         display: block;
+
         border-bottom: 1px solid @gray-form-hr;
       }
     }
 
     &__title {
       position: relative;
-      margin: 0;
+      z-index: 2;
+
       display: inline;
-      text-align: center ;
-      padding-left: 47px;
+      margin: 0;
       padding-right: 47px;
+      padding-left: 47px;
+
       font-size: @font-size-title+3;
       line-height: 26px;
-      background-color: #fff;
-      z-index: 2;
+      text-align: center ;
+
+      background-color: #ffffff;
     }
 
     &__wrap-fields {
@@ -125,7 +140,6 @@
 
 @media(min-width: @screen_lg) {
   .reviewer {
-
     &__field {
       width: 278px;
     }

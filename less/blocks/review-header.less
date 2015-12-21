@@ -1,48 +1,54 @@
 .review-header {
   padding-top: 60px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
+
   text-align: center;
+
   border-bottom: 1px solid @gray-form-border;
 
-    &__title {
-      margin-bottom: 27px;
-      font-size: @font-size-h1;
-      line-height: 26px;
-      color: #000;
-      font-weight: bold;
-    }
+  &__title {
+    margin-bottom: 27px;
 
-    &__text {
-      line-height: 24px;
-      color: #000;
-    }
+    font-weight: bold;
+    font-size: @font-size-h1;
+    line-height: 26px;
+    color: #000000;
+  }
+
+  &__text {
+    line-height: 24px;
+    color: #000000;
+  }
 }
 
 /* table-layout */
 
 @media(min-width: @screen_md) {
   .review-header {
-    border: none;
     margin-bottom: 55px;
+
+    border: none;
 
     &__wrap {
       padding: 0;
-      padding-left: 140px;
-      padding-right: 140px;
       padding-top: 15px;
+      padding-right: 140px;
+      padding-left: 140px;
     }
 
     &__title {
-      padding: 0;
       margin: 0;
       margin-bottom: 29px;
+      padding: 0;
+
       font-size: @font-size-h1+12;
     }
 
     &__text {
-      padding: 0;
       margin: 0;
+      padding: 0;
+
       font-size: @font-size-base;
       line-height: 26px;
       color: @gray-dark;

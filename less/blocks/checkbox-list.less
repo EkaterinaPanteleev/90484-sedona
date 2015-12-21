@@ -1,20 +1,18 @@
 .checkbox-list {
-
   &__wrap {
     margin-bottom: 55px;
   }
 
   &__col {
-
     ul {
-      list-style: none;
-      padding: 0;
       margin: 0;
+      padding: 0;
+
+      list-style: none;
     }
 
     &:last-child {
-
-      li:last-child {
+      li: last-child {
         margin-bottom: 30px;
       }
     }
@@ -26,23 +24,24 @@
 
   &__label {
     position: relative;
+
     margin-left: 79px;
+
+    font-weight: bold;
     font-size: @font-size-base+4;
     line-height: 26px;
-    color: #000;
+    color: #000000;
     text-transform: none;
-    font-weight: bold;
+
     cursor: pointer;
 
     &:hover {
-
       &::before {
         background-color: @gray-form-border;
       }
     }
 
     &:active {
-
       &::before {
         background-color: @gray-btn-active;
       }
@@ -57,25 +56,29 @@
       position: absolute;
       top: -13px;
       left: -80px;
+
       width: 56px;
       height: 56px;
-      border-radius: 3px;
+
       background-color: @gray-form;
+      border-radius: 3px;
     }
 
     &::after {
       content: "";
-      display: none;
       position: absolute;
       top: 4px;
       left: -62.5px;
+
+      display: none;
       width: 25px;
       height: 19px;
+
       background: url("../img/spritesheet.png") no-repeat -105px -3px;
     }
   }
 
-  &__item:checked+label::after {
+  &__item:checked + label::after {
     display: block;
   }
 }
@@ -85,8 +88,8 @@
 @media(min-width: @screen_md) {
   .checkbox-list {
     display: flex;
-    padding-left: 97px;
     padding-right: 97px;
+    padding-left: 97px;
 
     &__col {
       width: 50%;

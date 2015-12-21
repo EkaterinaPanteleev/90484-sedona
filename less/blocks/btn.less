@@ -1,116 +1,127 @@
 .btn {
   display: inline-block;
-  vertical-align: top;
   padding-top: 16px;
   padding-bottom: 16px;
 
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: #fff;
+  vertical-align: top;
   text-align: center;
-  font-weight: bold;
+  color: #ffffff;
 
   background-color: @blue;
   cursor: pointer;
 
-    &--search-block {
-      width: 280px;
+  &--search-block {
+    width: 280px;
 
-      &:hover {
-        background-color: @blue-hover;
-      }
-
-      &:active {
-        background-color: @blue-active;
-        color: @blue-text;
-      }
+    &:hover {
+      background-color: @blue-hover;
     }
 
-    &--send {
-      width: 280px;
-      border: none;
-      outline: none;
-      margin: 0 20px;
-      font-family: "PT Sans", "Arial", sans-serif;
-      text-transform: uppercase;
-      margin-bottom: 80px;
+    &:active {
+      color: @blue-text;
 
-      &:hover {
-        background-color: @blue-hover;
-      }
+      background-color: @blue-active;
+    }
+  }
 
-      &:active {
-        background-color: @blue-active;
-        color: @blue-text;
-      }
+  &--send {
+    width: 280px;
+    margin: 0 20px;
+    margin-bottom: 80px;
+
+    font-family: "PT Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+
+    border: none;
+    outline: none;
+
+    &:hover {
+      background-color: @blue-hover;
     }
 
-    &--popup-failure {
-      width: 180px;
+    &:active {
+      color: @blue-text;
 
-      &:hover {
-        background-color: @blue-hover;
-      }
+      background-color: @blue-active;
+    }
+  }
 
-      &:active {
-        background-color: @blue-active;
-        color: @blue-text;
-      }
+  &--popup-failure {
+    width: 180px;
+
+    &:hover {
+      background-color: @blue-hover;
     }
 
-    &--popup-success {
-      width: 280px;
+    &:active {
+      color: @blue-text;
 
-      &:hover {
-        background-color: @blue-hover;
-      }
+      background-color: @blue-active;
+    }
+  }
 
-      &:active {
-        background-color: @blue-active;
-        color: @blue-text;
-      }
+  &--popup-success {
+    width: 280px;
+
+    &:hover {
+      background-color: @blue-hover;
     }
 
-    &--drag {
-      display: none;
+    &:active {
+      color: @blue-text;
+
+      background-color: @blue-active;
     }
+  }
 
-    &--attach {
-      width: 280px;
-      color: @gray-btn-font;
-      background-color: @gray-form;
+  &--drag {
+    display: none;
+  }
 
-      &:hover {
-        background-color: @gray-form-border;
-        color: @gray-btn-font-hvr;
-      }
+  &--attach {
+    width: 280px;
 
-      &:active {
-        background-color: @gray-btn-active;
-        color: @gray-radio-active;
-      }
-    }
+    color: @gray-btn-font;
 
-    &--disabled {
+    background-color: @gray-form;
+
+    &:hover {
+      color: @gray-btn-font-hvr;
+
       background-color: @gray-form-border;
-      cursor: default;
-
-      &:hover {
-        background-color: @gray-form-border;
-      }
-
-      &:active {
-        background-color: @gray-form-border;
-        color: #fff;
-      }
     }
 
-    &--in-progress {
-      animation-name: progress;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-timing-function: easy;
+    &:active {
+      color: @gray-radio-active;
+
+      background-color: @gray-btn-active;
     }
+  }
+
+  &--disabled {
+    background-color: @gray-form-border;
+    cursor: default;
+
+    &:hover {
+      background-color: @gray-form-border;
+    }
+
+    &:active {
+      color: #ffffff;
+
+      background-color: @gray-form-border;
+    }
+  }
+
+  &--in-progress {
+    animation-name: progress;
+    animation-duration: 1s;
+    animation-timing-function: easy;
+    animation-iteration-count: infinite;
+  }
 }
 
 /* tablet-layout */
@@ -143,7 +154,6 @@
     &--popup-success {
       width: 458px;
     }
-
   }
 }
 
@@ -169,8 +179,9 @@
       }
 
       &:active {
-        background-color: @blue-active;
         color: @blue-text;
+
+        background-color: @blue-active;
       }
     }
 

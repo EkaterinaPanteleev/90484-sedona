@@ -1,49 +1,56 @@
 .welcome {
-
   &__img {
     position: relative;
+
     width: 320px;
     padding-top: 393px;
+
     background: @welcome-bg url("../img/photo-background@1x.jpg") no-repeat 60% 20%;
 
-      &::after {
-        content: "";
-        width: 1202px;
-        height: 57px;
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-image: url("../img/intro-triangle.svg");
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
 
-      &--welcome-text {
-        position: absolute;
-        top: 50px;
-        left: 88px;
-        fill: @blue;
-      }
+      width: 1202px;
+      height: 57px;
 
-      &--gorgeous-text {
-        position: absolute;
-        top: 95px;
-        left: 61px;
-        fill: @brown;
-      }
+      background-image: url("../img/intro-triangle.svg");
+      transform: translateX(-50%);
+    }
 
-      &--sedona-text {
-        position: absolute;
-        top: 177px;
-        left: 18px;
-        fill: #fff;
-      }
+    &--welcome-text {
+      position: absolute;
+      top: 50px;
+      left: 88px;
 
-      &--because-text {
-        position: absolute;
-        top: 290px;
-        left: 60px;
-        fill: #fff;
-      }
+      fill: @blue;
+    }
+
+    &--gorgeous-text {
+      position: absolute;
+      top: 95px;
+      left: 61px;
+
+      fill: @brown;
+    }
+
+    &--sedona-text {
+      position: absolute;
+      top: 177px;
+      left: 18px;
+
+      fill: #ffffff;
+    }
+
+    &--because-text {
+      position: absolute;
+      top: 290px;
+      left: 60px;
+
+      fill: #ffffff;
+    }
   }
 
   @media (min-resolution: 1.5dppx) {
@@ -58,26 +65,28 @@
   }
 
   &__wrap {
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 40px;
+    padding-right: 20px;
     padding-bottom: 5px;
+    padding-left: 20px;
   }
 
   &__title {
     width: 257px;
-    padding: 0;
     margin: 0 auto;
     margin-bottom: 28px;
+    padding: 0;
+
+    font-weight: bold;
     font-size: @font-size-h1;
     line-height: 26px;
-    color: #000;
-    font-weight: bold;
+    color: #000000;
   }
 
   &__text {
-    padding: 0;
     margin: 0;
+    padding: 0;
+
     font-size: @font-size-base;
     line-height: 26px;
     color: @gray-dark;
@@ -91,42 +100,49 @@
     &__img {
       width: 768px;
       padding-top: 513px;
+
       background-position: 70% 27%;
 
       &::after {
+        left: 0;
+
         width: 770px;
         height: 36px;
-        left: 0;
-        transform: none;
+
         background-size: cover;
+        transform: none;
       }
 
       &--welcome-text {
-        width: 190px;
-        height: 46px;
         top: 75px;
         left: 290px;
+
+        width: 190px;
+        height: 46px;
       }
 
       &--gorgeous-text {
-        width: 256px;
-        height: 27px;
         top: 133px;
         left: 255px;
+
+        width: 256px;
+        height: 27px;
       }
 
       &--sedona-text {
-        width: 457px;
-        height: 80px;
         top: 215px;
         left: 158px;
+
+        width: 457px;
+        height: 80px;
       }
 
       &--because-text {
-        width: 298px;
-        height: 80px;
         top: 350px;
         left: 230px;
+
+        width: 298px;
+        height: 80px;
       }
     }
 
@@ -145,6 +161,7 @@
       width: 443px;
       margin: 0 auto;
       margin-bottom: 28px;
+
       font-size: @font-size-h1+3;
     }
   }
@@ -154,18 +171,20 @@
 
 @media(min-width: @screen_lg) {
   .welcome {
-
     &__img {
       width: 1200px;
       padding-top: 513px;
+
       background-position: 70% 27%;
 
       &::after {
+        left: 0;
+
         width: 1200px;
         height: 57px;
-        left: 0;
-        transform: none;
+
         background-size: cover;
+        transform: none;
       }
 
       &--welcome-text {
@@ -191,5 +210,4 @@
       }
     }
   }
-
 }
