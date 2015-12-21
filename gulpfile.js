@@ -67,20 +67,16 @@ gulp.task("compress", function() {
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("jsconcat", function() {
+gulp.task("script", function() {
   return gulp.src(["source/js/*.js", "source/js/vendors/*.js"])
     .pipe(concat("script.js"))
-    .pipe(gulp.dest("build/js"));
-});
-
-gulp.task("jsmin", function () {
-  gulp.src("build/js/**/*.js")
+    .pipe(gulp.dest("build/js"))
     .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("build", ["compile", "copy", "compress", "jsmin"]);
+gulp.task("build", ["compile", "copy", "compress", "script"]);
 
 
 // Оставьте эту строку в самом конце файла
