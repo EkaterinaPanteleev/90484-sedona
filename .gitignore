@@ -2,6 +2,7 @@ gosha/
 build/
 node_modules/
 bower_components/
+source/
 .DS_Store
 Thumbs.db
 .idea
